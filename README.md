@@ -1,5 +1,5 @@
 # zkThon-challenges
-Challenges for zkThon
+Challenges for zkThon....
 
 | Challenge | Link | Prizes |
 | - | - | - |
