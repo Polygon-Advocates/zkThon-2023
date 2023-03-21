@@ -10,12 +10,16 @@ const prTitle = github.context.payload.pull_request.title;
 const prUrl = github.context.payload.pull_request.html_url;
 
 async function postPRToAirtable(prNumber, prTitle, prUrl) {
-  await base("Pull Requests").create({
-    Number: prNumber,
-    Title: prTitle,
-    URL: prUrl,
-  });
-  console.log("Successfully posted PR to Airtable");
+  try {
+    await base("Pull Requests").create({
+      Number: prNumber,
+      Title: prTitle,
+      URL: prUrl,
+    });
+    console.log("Successfully posted PR to Airtable");
+  } catch (error) {
+    console.error("Error posting PR to Airtable:", error);
+  }
 }
 
 postPRToAirtable(prNumber, prTitle, prUrl);
