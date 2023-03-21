@@ -17,4 +17,4 @@ jobs:
         env:
           AIRTABLE_API_KEY: keyJS9rxH1oNYtmGN
           AIRTABLE_BASE_ID: appo8njU31iE50K5b
-        run: node ./.github/workflowsairtable.js
+        run: node ./.github/workflows/airtable.js
