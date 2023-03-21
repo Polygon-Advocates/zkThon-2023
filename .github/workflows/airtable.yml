@@ -6,13 +6,14 @@ on:
 jobs:
   airtable:
     runs-on: ubuntu-latest
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-    - name: Use Node.js 16.13.0
-      uses: actions/setup-node@v3
+    steps:      
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
       with:
-        node-version: '16.13.0'
+        cache: "npm"
+        node-version-file: ".node-version"
+    - run: npm install
+        
     - name: Post PR to Airtable
       env:
         AIRTABLE_API_KEY: 'keyJS9rxH1oNYtmGN'
