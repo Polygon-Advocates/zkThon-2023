@@ -17,11 +17,4 @@ jobs:
         env:
           AIRTABLE_API_KEY: keyJS9rxH1oNYtmGN
           AIRTABLE_BASE_ID: appo8njU31iE50K5b
-        run: |
-          airtable = require('./airtable.js');
-          const github = require('@actions/github');
-          const prNumber = github.context.payload.pull_request.number;
-          const prTitle = github.context.payload.pull_request.title;
-          const prUrl = github.context.payload.pull_request.html_url;
-
-          airtable.postPRToAirtable(prNumber, prTitle, prUrl);
+        run: node airtable.js
