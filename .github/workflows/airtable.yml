@@ -1,0 +1,18 @@
+name: Post PR to Airtable
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  post_pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install airtable
+      - name: Post PR to Airtable
+        env:
+          AIRTABLE_API_KEY: ${{ keyJS9rxH1oNYtmGN }}
+          AIRTABLE_BASE_ID: appo8njU31iE50K5b
+        run: node .github/workflows/airtable.js
