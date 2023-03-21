@@ -1,0 +1,19 @@
+name: Pull Request Reviews
+on:
+  pull_request_review:
+    types: [submitted, dismissed]
+jobs:
+  check_approvals:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Count approved reviews
+        id: count-reviews
+        run: echo "::set-output name=approved_reviews::$(jq -r '.reviews[] | select(.state == \"approved\") | .id' $GITHUB_EVENT_PATH | sort -u | wc -l)"
+      - name: Check if reviews are sufficient
+        if: ${{ steps.count-reviews.outputs.approved_reviews >= 2 }}
+        run: echo "Two reviews have been approved"
+      - name: Request changes
+        if: ${{ steps.count-reviews.outputs.approved_reviews == 1 }}
+        run: echo "One review has been approved, waiting for one more"
