@@ -8,7 +8,7 @@ const base = new Airtable({apiKey: apiKey }).base(apiBase);
 async function run() {
   const prNumber = github.context.payload.pull_request.number;
   const prTitle = github.context.payload.pull_request.title;
-  const prUrl = github.context.payload.pull_request.html_urlL;
+  const prUrl = github.context.payload.pull_request.html_url;
 
   await base('Pull Requests').create({
     'Number': prNumber,
