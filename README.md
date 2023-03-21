@@ -1,5 +1,6 @@
 # zkThon-challenges
-Challenges for zkThon[Testing for aita]
+Challenges for zkThon
+
 
 | Challenge | Link | Prizes |
 | - | - | - |
