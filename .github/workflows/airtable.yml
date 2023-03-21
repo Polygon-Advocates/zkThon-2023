@@ -9,10 +9,10 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Use Node.js 16.x
+    - name: Use Node.js 16.13.0
       uses: actions/setup-node@v3
       with:
-        node-version: '16.x'
+        node-version: '16.13.0'
     - name: Post PR to Airtable
       env:
         AIRTABLE_API_KEY: 'keyJS9rxH1oNYtmGN'
