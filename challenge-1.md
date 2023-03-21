@@ -11,7 +11,7 @@
 
 ## Submission Guidelines
 
-- Create a new fork of the project
+- Create a new fork of the project and name it as <YOURNAME_ChallengeNO>
 - Create a file named as solution-1.md
 - Post the link to your tweet in the file
 - Create a Pull Request to the main repository.
