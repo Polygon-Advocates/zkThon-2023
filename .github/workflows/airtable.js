@@ -3,7 +3,10 @@ const github = require("@actions/github");
 
 const apiKey = "keyJS9rxH1oNYtmGN";
 const baseId = "appo8njU31iE50K5b";
-const base = new Airtable({ apiKey: apiKey }).base(baseId);
+const base = new Airtable({
+  endpointUrl: "https://api.airtable.com",
+  apiKey: apiKey,
+}).base(baseId);
 
 const prNumber = github.context.payload.pull_request.number;
 const prTitle = github.context.payload.pull_request.title;
