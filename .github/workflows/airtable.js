@@ -1,8 +1,8 @@
 const Airtable = require('airtable');
 const github = require('@actions/github');
 
-const apiKey = keyJS9rxH1oNYtmGN;
-const apiBase = appo8njU31iE50K5b
+const apiKey = 'keyJS9rxH1oNYtmGN';
+const apiBase = 'appo8njU31iE50K5b';
 const base = new Airtable({apiKey: apiKey }).base(apiBase);
 
 async function run() {
