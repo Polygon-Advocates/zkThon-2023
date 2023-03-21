@@ -6,21 +6,22 @@ on:
 jobs:
   airtable:
     runs-on: ubuntu-latest
-    steps:      
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        cache: "npm"
-    - run: npm install
-        
-    - name: Post PR to Airtable
-      env:
-        AIRTABLE_API_KEY: 'keyJS9rxH1oNYtmGN'
-        AIRTABLE_BASE_ID: 'appo8njU31iE50K5b'
-      run: |
-        const airtable = require('./airtable.js');
-        const prNumber = github.context.payload.pull_request.number;
-        const prTitle = github.context.payload.pull_request.title;
-        const prUrl = github.context.payload.pull_request.html_url;
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          cache: "npm"
+      - run: npm install
 
-        airtable.postPRToAirtable(prNumber, prTitle, prUrl);
+      - name: Post PR to Airtable
+        env:
+          AIRTABLE_API_KEY: keyJS9rxH1oNYtmGN
+          AIRTABLE_BASE_ID: appo8njU31iE50K5b
+        run: |
+          const airtable = require('./airtable.js');
+          const github = require('@actions/github');
+          const prNumber = github.context.payload.pull_request.number;
+          const prTitle = github.context.payload.pull_request.title;
+          const prUrl = github.context.payload.pull_request.html_url;
+
+          airtable.postPRToAirtable(prNumber, prTitle, prUrl);
