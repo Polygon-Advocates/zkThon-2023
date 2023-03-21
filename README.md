@@ -1,5 +1,5 @@
 # zkThon-challenges
-Challenges for zkThon[Testing for airtable]
+Challenges for zkThon[Testing for airtable again]
 
 | Challenge | Link | Prizes |
 | - | - | - |
