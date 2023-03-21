@@ -1,0 +1,76 @@
+{
+  "name": "airtable",
+  "version": "0.11.6",
+  "license": "MIT",
+  "homepage": "https://github.com/airtable/airtable.js",
+  "repository": "git://github.com/airtable/airtable.js.git",
+  "private": false,
+  "scripts": {
+    "pretest": "npm run lint && npm run prepare && cp build/airtable.browser.js test/test_files; true",
+    "lint": "eslint '*/**/*.{js,ts,tsx}'",
+    "format": "prettier --write '**/*.[j|t]s'",
+    "test": "jest --env node --coverage --no-cache",
+    "test-unit": "jest --env node",
+    "prepare": "rm -rf lib/* && rm -f build/airtable.browser.js && tsc && cp lib/airtable.js lib/tmp_airtable.js && grunt browserify && rm lib/tmp_airtable.js"
+  },
+  "dependencies": {
+    "@types/node": ">=8.0.0 <15",
+    "abort-controller": "^3.0.0",
+    "abortcontroller-polyfill": "^1.4.0",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.7"
+  },
+  "main": "./lib/airtable.js",
+  "types": "./lib/airtable.d.ts",
+  "browser": {
+    "node-fetch": false,
+    "abort-controller": false,
+    "./lib/airtable.js": "./lib/airtable.umd.js",
+    "./lib/package_version": "./lib/package_version_browser"
+  },
+  "files": [
+    "/README.md",
+    "/CHANGELOG.md",
+    "/LICENSE.txt",
+    "/build/airtable.browser.js",
+    "/lib/"
+  ],
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "@types/lodash": "^4.14.157",
+    "@typescript-eslint/eslint-plugin": "^3.4.0",
+    "@typescript-eslint/parser": "^3.4.0",
+    "body-parser": "^1.19.0",
+    "envify": "^4.1.0",
+    "eslint": "^6.8.0",
+    "express": "^4.17.1",
+    "get-port": "^5.0.0",
+    "grunt": "^1.3.0",
+    "grunt-browserify": "^5.3.0",
+    "husky": "^3.0.9",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^2.0.0",
+    "semver": "^6.3.0",
+    "typescript": "^3.9.5"
+  },
+  "keywords": [
+    "airtable",
+    "productivity",
+    "database",
+    "spreadsheet"
+  ],
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
