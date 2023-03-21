@@ -1,6 +1,5 @@
 # zkThon-challenges
-Challenges for zkThon[Testing for aita]
-
+Challenges for zkThon
 | Challenge | Link | Prizes |
 | - | - | - |
 | Challenge -1 | [Start](https://github.com/Polygon-Advocates/zkThon-challenges/blob/main/challenge-1.md) | pfp |
