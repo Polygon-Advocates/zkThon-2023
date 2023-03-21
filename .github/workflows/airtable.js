@@ -9,7 +9,7 @@ const prNumber = github.context.payload.pull_request.number;
 const prTitle = github.context.payload.pull_request.title;
 const prUrl = github.context.payload.pull_request.html_url;
 
-airtable.postPRToAirtable(prNumber, prTitle, prUrl);
+Airtable.postPRToAirtable(prNumber, prTitle, prUrl);
 
 async function postPRToAirtable(prNumber, prTitle, prUrl) {
   await base("Pull Requests").create({
