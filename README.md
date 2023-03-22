@@ -20,6 +20,7 @@ Checkout the master notion page: **[zkThon 2023](https://www.notion.so/polygonte
  - [ ] Create `solution-1.md`, `solution-2.md` and `solution-3.md` for respective solutions in the root directory.
  - [ ] LFG... Start solving the challenges.
  - [ ] Don't forget to look into [**Notion Page**](https://polygontechnology.notion.site/polygontechnology/zkThon-A-Week-Long-event-for-the-Polygon-Community-54cc518ee7ec428b813b02998f84c5df) for step by step challenge details.
+ - [ ] **Please add appropriate tags in while creating a PR.**
 
 ## Challenges
 
