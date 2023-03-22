@@ -4,13 +4,17 @@
 
 ## Challenge Tasks
 
-- Set up your development environment for zkEVM Polygon by following the instructions [here](https://wiki.polygon.technology/docs/category/deploying-contracts).
+- Set up your development environment for zkEVM Polygon by following the instructions [here](https://wiki.polygon.technology/docs/zkEVM/develop#connecting-to-zkevm).
 - Write a simple ERC20 or ERC721 token smart contract using Solidity.
 - Compile your smart contract using the Solidity compiler.
 - Deploy your smart contract to the Polygon zkEVM testnet using Remix or Hardhat.
 - Provide the code for your smart contract and the link to the deployed contract on the Polygon zkEVM testnet.
 
-## Submission GUidelines
+## Get Test Tokens for the Polygon zkEVM testnet
+
+Watch the tutorial [here](https://wiki.polygon.technology/docs/zkEVM/develop#bridge-assets-to-zkevm) to get test tokens for the Polygon zkEVM testnet.
+
+## Submission Guidelines
 
 - Create a new fork of the project and name it as <YOURNAME_ChallengeNO>
 - Create a file named as solution-2.md
