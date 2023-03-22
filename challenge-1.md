@@ -6,7 +6,7 @@
 ## Challenges tasks
 
 - Login/Register to your twitter account.
-- Tweet about the zkThon by Polygon with the hashtag #zkThon.
+- Tweet about the zkThon by Polygon with the hashtag #zkThon and adding what you understood about zkEVM.
 - Copy the link to the tweet.
 
 ## Submission Guidelines
