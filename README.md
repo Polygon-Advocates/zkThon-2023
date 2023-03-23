@@ -39,10 +39,10 @@ Checkout the master notion page: **[zkThon 2023](https://www.notion.so/polygonte
 ---
 **Creators & Contributors:**
 
- - Priyatham Varma
- - Yash Garg
- - Nuno
- - Twenx
+ - [Priyatham Varma](https://twitter.com/Mister_V_Varma)
+ - [Yash Garg](https://twitter.com/megabyte0x)
+ - [Nuno](https://twitter.com/nunomiguelcg)
+ - [Twenx](https://twitter.com/Twenx_)
 
 
 
