@@ -1,22 +1,26 @@
-# Challenge 2
 
-> Challenge Description: In this challenge, you will deploy a simple ERC20 or ERC721 token on the Polygon zkEVM testnet and interact with it.
+# 🪴 Challenge II: Deploy an ERC20 or ERC721 Token on the zkEVM Testnet
 
-## Challenge Tasks
+> Challenge Description: your task is to deploy an ERC20 or ERC721 token on the zkEVM Testnet. This challenge is easy and may take a few hours to complete, and we can't wait for you to claim your **.lens** handle. 
 
-- Set up your development environment for zkEVM Polygon by following the instructions [here](https://wiki.polygon.technology/docs/zkEVM/develop#connecting-to-zkevm).
-- Write a simple ERC20 or ERC721 token smart contract using Solidity.
-- Compile your smart contract using the Solidity compiler.
-- Deploy your smart contract to the Polygon zkEVM testnet using Remix or Hardhat.
-- Provide the code for your smart contract and the link to the deployed contract on the Polygon zkEVM testnet.
 
-## Get Test Tokens for the Polygon zkEVM testnet
+## Steps on how to get started 🏃🏻‍♂️ 
 
-Watch the tutorial [here](https://wiki.polygon.technology/docs/zkEVM/develop#bridge-assets-to-zkevm) to get test tokens for the Polygon zkEVM testnet.
+- Let's start with setting up your development environment for zkEVM development by following the instructions [here](https://wiki.polygon.technology/docs/zkEVM/develop#connecting-to-zkevm).
 
-## Submission Guidelines
+- In order to get some test tokens for the Polygon zkEVM testnet, Watch the tutorial [here](https://wiki.polygon.technology/docs/zkEVM/develop#bridge-assets-to-zkevm) to get test tokens for the Polygon zkEVM testnet.
 
-- Create a new fork of the project and name it as <YOURNAME_ChallengeNO>
-- Create a file named as solution-2.md
-- Post the code for your smart contract and the link to the deployed contract on the Polygon zkEVM testnet in the file.
-- Create a Pull Request to the main repository.
+- Now lets write a simple ERC20 or ERC721 token smart contract using Solidity, Or for more ease you could get it from the [Openzeppelin wizard](https://docs.openzeppelin.com/contracts/4.x/wizard).
+- Now lets compile and deploy your smart contract using solidity compilers like [remix](https://remix.ethereum.org/) on the Polygon zkEVM testnet, for any doubts and refrence needed mid way deployment refer [here](https://wiki.polygon.technology/docs/zkEVM/develop). 
+
+- Once deployed head over to the [block explorer](https://explorer.internal.zkevm-test.net/) and lets verfy the deployment and get all the nesseary information for the submissions.
+- Things to look for submissions [ `Transaction hash` and `Contract address` ] 
+
+## Lets Proceed with the Submission and how do we proceed with that
+
+- Fork the repository [ we hope you did that already 💫] 
+- Create a new branch  `username_zkthon`, e.g.  `PriyathamVarma_zkThon`  [ we hope you already did this too  💫] 
+- Now lets create a file named as `solution-2.md`.
+- Now lets add the code for the smart contract and the link to the deployed contract on the Polygon zkEVM testnet, with the `Transaction Hash` and `contract address` .
+- Create a Pull Request to the main repository. 
+- Once done, now lets post the submission and claim your lens handle, Add the information here [Airtable form](https://airtable.com/shr21z0FfPImZfYBQ) [ Things needed for submission ( Link to the `solution-2.md` file, `Polygon wallet address` ) ] 
