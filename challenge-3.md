@@ -1,14 +1,21 @@
 # 🌳 Challenge III: Fork a Major Protocol and Deploy it on the zkEVM Testnet 
 
-> In this challenge, your task is to fork a major protocol and deploy it to the zkEVM Testnet. This challenge is intermediate and may take a few days to complete, and **claim an awesome T-shirt**. 
 
-## Steps on how to get started 🏃🏻‍♂️
+## Description
+Fork a major protocol and deploy it to the zkEVM Testnet. This challenge had intermediate difficulty and may take a few days to complete.
 
--  Let's start with setting up your development environment for zkEVM development by following the instructions  [here](https://wiki.polygon.technology/docs/zkEVM/develop#connecting-to-zkevm), Also here is an [awesome vedio from step](https://www.youtube.com/watch?v=GNBHDCGFxtw) to help you with setting up the local development and building a fullstack dApp with Polygon zkEVM, link to the repo [here](https://github.com/oceans404/fullstack-zkevm) for refrence. 
+## Rewards
+**Claim a Cool zkThon T-shirt**. [*Sharing the design with you all soon!*]
+
+## Get Started 🏃🏻‍♂️
+
+- Setup your testnet environment for zkEVM development [here](https://wiki.polygon.technology/docs/zkEVM/develop#connecting-to-zkevm).
+
+- Checkout this [video](https://www.youtube.com/watch?v=GNBHDCGFxtw) by Steph Orpilla, Devrel Engineer - Polygon Labs to help you with setting up the local development and building a fullstack dApp with Polygon zkEVM, link to the repo [here](https://github.com/oceans404/fullstack-zkevm) for reference. 
     
--   In order to get some test tokens for the Polygon zkEVM testnet, Watch the tutorial  [here](https://wiki.polygon.technology/docs/zkEVM/develop#bridge-assets-to-zkevm)  to get test tokens for the Polygon zkEVM testnet.
+- Claim some tokens required to work with Polygon zkEVM testnet [here](https://wiki.polygon.technology/docs/zkEVM/develop#bridge-assets-to-zkevm) 
 
-- Now lets find a smart contract deployed on the zkEVM Polygon network, You can use any contract deployed on the Polygon testnet. 
+- Now lets find a protocol's smart contract deployed on Polygon PoS chain. You can get the contracts from [CoinGecko](https://www.coingecko.com/)
 
 - Read the contract's documentation or ABI to understand its functions and inputs as how is the contract functioning. 
 
@@ -20,10 +27,20 @@
 
 ## Challenge Submission and guidelines
 
+- [ ] Fork the repository [we hope you did that already 💫] 
 
-- Fork the repository [ we hope you did that already 💫] 
-- Create a new branch  `username_zkthon`, e.g.  `PriyathamVarma_zkThon`  [ we hope you already did this too  💫] 
-- Now lets create a file named as `solution-3.md`.
-- Now lets add the smart contract and the code for your script in the file, with the `Transaction Hash` and `contract address` .
-- Create a Pull Request [PR] to the main repository. 
-- Once done, now lets post the submission and claim your lens handle, Add the information here [**Airtable form**](https://airtable.com/shr21z0FfPImZfYBQ) [ Things needed for submission ( Link to the `solution-3.md` file, `Polygon wallet address` ) ] **This is an Important step please don't skip on adding the detials here**
+- [ ] Create a new branch  `username_zkthon`, e.g.  `PriyathamVarma_zkThon`  [we hope you already did this too💫] 
+
+- [ ] Now lets create a file named as `solution-3.md`.
+
+- [ ] Now lets add the address of the smart contract deployed on Polygon zkEVM Testnet in `solutions-3.md`
+
+- [ ] Create a Pull Request [PR] to the main repository
+
+- [ ] Take the `Transaction Hash` and `Contract Address` and put it the Airtable form below with rest of the details. 
+
+-------
+
+[**Submission Challenge II form**](https://airtable.com/shr21z0FfPImZfYBQ)
+
+*This is an Important step please don't skip.*
