@@ -7,13 +7,13 @@
 ## Steps on how to Contribute ?
 
  - It's time for you to get started with the documentation for the coolest tech [zkEVM docs](https://wiki.polygon.technology/docs/zkEVM/develop)
- - Share us your thoughts and learning with a twitter thread with hashtag #zkThon and share you understanding about zkEVM. 
+ - Share us your thoughts and learning with a twitter thread with hashtag **#zkThon** & **#zkEVM** and share you understanding about zkEVM. 
  - [Example Tweet by @0xSushiKev](https://twitter.com/0xSushiKev/status/1637816990709719040)
- - create a new file with title `solution-1.md`  and add the twitter thread link to the description.
- - Add the link of this `solution-1.md`  file to this zkThon challenge submission form [here](https://airtable.com/shr21z0FfPImZfYBQ), **IMP step** 
+ - Create a new file with title `solution-1.md`  and add the twitter thread link to the description.
+ - Add the link of this `solution-1.md`  file to this zkThon challenge submission form [here](https://airtable.com/shr21z0FfPImZfYBQ), **[IMP step]** 
  
 ## Submission Guidelines
 
 - Create a new branch `username_zkthon`, e.g. `PriyathamVarma_zkThon`
 - Create a file named as `solution-1.md` for this challenge. 
-- Also add the detials to the to the airtable form. 
+- Also add the detials to the to the airtable form here [**Airtable form**](https://airtable.com/shr21z0FfPImZfYBQ) [ Things needed for submission ( Link to the `solution-1.md` file, `Polygon wallet address` ) ] **This is an Important step please don't skip on adding the detials here.** 
