@@ -1,0 +1,14 @@
+name: Show form on PR approval
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  show-form:
+    runs-on: ubuntu-latest
+    if: github.event.review.state == 'approved'
+    steps:
+      - name: Show form
+        run: |
+          echo "Please complete this form to complete the approval process: https://your-form-url-here.com/"
