@@ -10,6 +10,13 @@
 
 The challenges are divided into three phases, ranging from very easy to intermediate difficulty, and participants can choose to contribute to one or all of them.
 
+## Hashtags Used
+As much as we're excited to see you participate, we also want to amplify this coalescence to the degen world for the one in all [**zkEVM Launch**](https://ethglobal.com/events/polygon-zk-summit)
+
+**Please make a lots of tweets and get the fellow BUIDLers hyped up:**
+- `zkEVM`
+- `zkThon`
+
 # tl;dr
 Checkout the master notion page: **[zkThon 2023](https://www.notion.so/polygontechnology/zkThon-54cc518ee7ec428b813b02998f84c5df)**
 
