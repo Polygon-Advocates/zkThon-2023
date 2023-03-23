@@ -1,22 +1,13 @@
 ## Description
 
-Please provide a brief description of the changes made in this Pull Request.
-
-## Related Issues
-
-Please list any related issues or tickets that this Pull Request addresses.
-
-- [ ] Issue #1
-- [ ] Issue #2
+This pull request is for the zkEVM Challenge. I have reviewed the zkEVM documentation and shared my understanding through a Twitter thread using the hashtags #zkThon and #zkEVM. The link to my Twitter thread is [insert link here].
 
 ## Checklist
 
-Please check the boxes below to confirm that you have completed these tasks.
-
-- [ ] All tests pass.
-- [ ] The code is well-documented.
-- [ ] The code follows the project's style guide.
+- [ ] I have created a new file named `solution-1.md` for this challenge.
+- [ ] I have added the details of my submission to the Airtable form [insert link here].
+- [ ] I have named my branch `username_zkthon`.
 
 ## Additional Information
 
-Please provide any additional information or context that might be helpful for reviewers.
+[Add any additional information here if needed]
