@@ -22,5 +22,5 @@
 - Create a new branch  `username_zkthon`, e.g.  `PriyathamVarma_zkThon`  [ we hope you already did this too  💫] 
 - Now lets create a file named as `solution-2.md`.
 - Now lets add the code for the smart contract and the link to the deployed contract on the Polygon zkEVM testnet, with the `Transaction Hash` and `contract address` .
-- Create a Pull Request to the main repository. 
-- Once done, now lets post the submission and claim your lens handle, Add the information here [Airtable form](https://airtable.com/shr21z0FfPImZfYBQ) [ Things needed for submission ( Link to the `solution-2.md` file, `Polygon wallet address` ) ] 
+- Create a Pull Request [PR] to the main repository. 
+- Once done, now lets post the submission and claim your lens handle, Add the information here [**Airtable form**](https://airtable.com/shr21z0FfPImZfYBQ) [ Things needed for submission ( Link to the `solution-2.md` file, `Polygon wallet address` ) ] **This is an Important step please don't skip on adding the detials here**
