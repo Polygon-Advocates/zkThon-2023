@@ -7,7 +7,7 @@ on:
 jobs:
   show-form:
     runs-on: ubuntu-latest
-    if: github.event.review.state == 'approved'
+    if: github.event.review.state == 'open'
     steps:
       - name: Show form
         run: |
