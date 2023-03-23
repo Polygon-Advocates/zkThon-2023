@@ -1,8 +1,8 @@
 name: Show form on PR approval
 
 on:
-  pull_request_review:
-    types: [submitted]
+  pull_request:
+    types: [opened]
 
 jobs:
   show-form:
