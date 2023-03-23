@@ -22,7 +22,7 @@ Checkout the master notion page: **[zkThon 2023](https://www.notion.so/polygonte
 
 ## First Steps
 
- - [ ] Fork the repository
+ - [ ] Fork the repository & install dependencies `npm install`
  - [ ] Create a new branch `username_zkthon`, e.g. `PriyathamVarma_zkThon`
  - [ ] Create `solution-1.md`, `solution-2.md` and `solution-3.md` for respective solutions in the root directory.
  - [ ] LFG... Start solving the challenges.
