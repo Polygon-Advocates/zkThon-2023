@@ -16,7 +16,7 @@
 - Once deployed head over to the [block explorer](https://explorer.internal.zkevm-test.net/) and lets verfy the deployment and get all the nesseary information for the submissions.
 - Things to look for submissions [ `Transaction hash` and `Contract address` ] 
 
-## Lets Proceed with the Submission and how do we proceed with that
+## Challenge Submission and guidelines
 
 - Fork the repository [ we hope you did that already 💫] 
 - Create a new branch  `username_zkthon`, e.g.  `PriyathamVarma_zkThon`  [ we hope you already did this too  💫] 
