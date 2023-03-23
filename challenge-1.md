@@ -1,17 +1,18 @@
 
 # 🌱 Challenge I: Review the zkEVM Docs and Tweet Your Understanding
 
-
 ## Description
-Review the zkEVM docs and tweet your understanding via a Twitter thread. This challenge is very easy and should take only a few minutes to complete. 
+
+Review the [zkEVM docs](https://wiki.polygon.technology/docs/zkEVM/develop) and tweet your understanding via a Twitter thread. This challenge is very easy and should take only a few minutes to complete. 
 
 ## Rewards
+
 We can’t wait for you to complete this and claim, **your PFP’s 🖼️**
 
 ## Hashtags Used
-[ ] `zkEVM`
-[ ] `zkThon`
 
+- [ ] `#zkEVM`
+- [ ] `#zkThon`
 
 ## Steps on how to Contribute ?
 
@@ -21,9 +22,13 @@ We can’t wait for you to complete this and claim, **your PFP’s 🖼️**
 
  - [Example Tweet by @0xSushiKev](https://twitter.com/0xSushiKev/status/1637816990709719040)
 
- - Create a new file with title `solution-1.md`  and add the twitter thread link to the description.
+ - Create a new file with title `solution-1.md` and add the twitter thread link in the file.
 
- - Add the link of this `solution-1.md`  file to this zkThon challenge submission form [here](https://airtable.com/shr21z0FfPImZfYBQ), **[IMP step]** 
+ - **[VERY IMPORTANT STEP]**  Add the link of this `solution-1.md` file to this [zkThon challenge submission form](https://airtable.com/shr21z0FfPImZfYBQ).
+ 
+ ```
+ (ex: https://github.com/username/Polygon-Advocates--zkThon-2023/blob/username_zkthon/solution-1.md)
+ ```
  
 ## Submission Guidelines
 
@@ -39,4 +44,4 @@ We can’t wait for you to complete this and claim, **your PFP’s 🖼️**
 
 [**Submission Challenge I form**](https://airtable.com/shr21z0FfPImZfYBQ)
 
-*This is an Important step please don't skip.*
+*This is an Important step, please don't skip.*

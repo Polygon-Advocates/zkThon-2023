@@ -1,43 +1,79 @@
-# 🌳 Challenge III: Fork a Major Protocol and Deploy it on the zkEVM Testnet 
+# 🌳 Challenge III: Interact With A Deployed Contract On zkEVM Testnet 
 
 
 ## Description
-Fork a major protocol and deploy it to the zkEVM Testnet. This challenge had intermediate difficulty and may take a few days to complete.
+
+Interact with an existing contract deployed to zkEVM Testnet. This challenge had intermediate difficulty and may take a bit to complete.
 
 ## Rewards
+
 **Claim a Cool zkThon T-shirt**. [*Sharing the design with you all soon!*]
 
 ## Get Started 🏃🏻‍♂️
 
-- Setup your testnet environment for zkEVM development [here](https://wiki.polygon.technology/docs/zkEVM/develop#connecting-to-zkevm).
+- Configure your wallet for the zkEVM Testnet for development [here](https://wiki.polygon.technology/docs/zkEVM/develop#connecting-to-zkevm).
 
 - Checkout this [video](https://www.youtube.com/watch?v=GNBHDCGFxtw) by Steph Orpilla, Devrel Engineer - Polygon Labs to help you with setting up the local development and building a fullstack dApp with Polygon zkEVM, link to the repo [here](https://github.com/oceans404/fullstack-zkevm) for reference. 
     
 - Claim some tokens required to work with Polygon zkEVM testnet [here](https://wiki.polygon.technology/docs/zkEVM/develop#bridge-assets-to-zkevm) 
 
-- Now lets find a protocol's smart contract deployed on Polygon PoS chain. You can get the contracts from [CoinGecko](https://www.coingecko.com/)
+- Take a look at the following solidity contract for reference, which has been deployed to [this contract address on zkEVM Testnet](https://explorer.public.zkevm-test.net/address/0x3aC587078b344a3d27e56632dFf236F1Aff04D56).
 
-- Read the contract's documentation or ABI to understand its functions and inputs as how is the contract functioning. 
+```solidity
+//SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
 
-- After finished, create a simple script to interact with the contract in a programming language of your choosing. To interact with the contract more easily, use a framework like Web3.js or ethers.js.
+contract ZkThon {
+    // Events that allows for emitting a message
+    event NewSubmission(address sender, string message);
 
-- Use your script to run a function on the contract while giving any required arguments. For a reference example on how this may be done, you could utilise [**Steph's video**](https://youtu.be/GNBHDCGFxtw). You could also come and ask us questions in this [**Telegram group**](https://t.me/zkThon), and we'll attempt to assist you.
+    // Variables
+    string username;
 
-- Now just retrieve and display the output of the function call, and boom it's done.
+    // Main constructor run at deployment
+    constructor(string memory _username) {
+        username = _username;
+        emit NewSubmission(msg.sender, _username);
+    }
+
+    // Get function
+    function getCurrentSubmission() public view returns (string memory) {
+        return username;
+    }
+
+    // Set function
+    function submitUsername(string memory _username) public {
+        username = _username;
+        emit NewSubmission(msg.sender, _username);
+    }
+}
+```
+
+- Look over this solidity code to understand its functions and inputs to better understand the contract functionality. 
+
+- After understanding the contract functionality, create a simple script to interact with the contract in a programming language of your choosing by updating the `username` with your github username. To interact with the contract more easily, you could use a library like [ethers](https://docs.ethers.org/v5/), [viem](https://viem.sh), or [Web3.js](https://web3js.readthedocs.io/en/v1.8.2/), to name a few options.
+
+- Use your script to call the `submitUsername` function on the contract while supplying your github username (without the @). For a reference example on how this may be done, you could utilise [**Steph's video**](https://youtu.be/GNBHDCGFxtw). If you get stuck, you could always ask us questions in this [**Telegram group**](https://t.me/zkThon), and we'll attempt to assist you.
+
+- Retrieve the transaction URL that was completed onchain with your updated github username and paste it into your new file for `solution-3.md`
+
+**Example:**
+
+```bash
+https://explorer.public.zkevm-test.net/tx/0xc62996c8599534f93a404a5b9614357aa36c4166f5230d80bcecf4af995aded8
+```
 
 ## Challenge Submission and guidelines
 
 - [ ] Fork the repository [we hope you did that already 💫] 
 
-- [ ] Create a new branch  `username_zkthon`, e.g.  `PriyathamVarma_zkThon`  [we hope you already did this too💫] 
+- [ ] Create a new branch (if not already created) `username_zkthon`, e.g.  `PriyathamVarma_zkThon` [we hope you already did this too💫] 
 
-- [ ] Now lets create a file named as `solution-3.md`.
+- [ ] Now let's create a file named as `solution-3.md`.
 
-- [ ] Now lets add the address of the smart contract deployed on Polygon zkEVM Testnet in `solutions-3.md`
+- [ ] Now let's paste the URL transaction into `solutions-3.md`
 
-- [ ] Create a Pull Request [PR] to the main repository
-
-- [ ] Take the `Transaction Hash` and `Contract Address` and put it the Airtable form below with rest of the details. 
+- [ ] **[VERY IMPORTANT STEP]** Take the `Transaction Hash` and `Contract Address` and put it the Airtable form below with rest of the details. 
 
 -------
 

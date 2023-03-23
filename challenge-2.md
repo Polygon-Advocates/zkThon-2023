@@ -14,30 +14,38 @@ Enter Lens allowlist, and claim a [**Lens**](https://www.lens.xyz/) handle.
 
 - Claim some tokens required to work with Polygon zkEVM testnet [here](https://wiki.polygon.technology/docs/zkEVM/develop#bridge-assets-to-zkevm) 
 
-- Write a simple ERC20 or ERC721 token smart contract using Solidity, Or for more ease you can use [Openzeppelin wizard](https://docs.openzeppelin.com/contracts/4.x/wizard).
+- Write a simple ERC20 or ERC721 token smart contract using Solidity, Or for more ease of use you can use the [Openzeppelin wizard](https://docs.openzeppelin.com/contracts/4.x/wizard).
 
-- Now lets compile and deploy your smart contract using solidity compilers like [remix](https://remix.ethereum.org/) on the Polygon zkEVM testnet, 
+- Now let's compile and deploy your smart contract using solidity compilers like [remix](https://remix.ethereum.org/) on the Polygon zkEVM testnet. (NOTE: You can use Hardhat if you want to as well)
 
-- For any doubts or references needed mid way deployment refer [zkEVM wiki](https://wiki.polygon.technology/docs/zkEVM/develop). 
+- Getting stuck mid-way with deployments? Refer to our [zkEVM wiki](https://wiki.polygon.technology/docs/zkEVM/develop). 
 
-- Once deployed head over to the [block explorer](https://explorer.internal.zkevm-test.net/) and lets verfy the deployment and get all the necessary information for the submissions.
+- Once deployed head over to the [block explorer](https://explorer.internal.zkevm-test.net/) and let's verify the deployment and get all the necessary information for the submission.
 
-- Things to look for submissions [ `Transaction hash` and `Contract address` ] 
+- We'll need two things for the submission `Transaction hash` and `Contract address`
+
+**Example:**
+
+```bash
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0xYourContractAddress/contracts
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0xYouTransactionAddress
+```
 
 
 ## Challenge Submission and guidelines
 
 - [ ] Fork the repository [ we hope you did that already 💫] 
 
-- [ ] Create a new branch  `username_zkthon`, e.g.  `PriyathamVarma_zkThon`  [ we hope you already did this too  💫] 
+- [ ] Create a new branch (if not already created)  `username_zkthon`, e.g.  `PriyathamVarma_zkThon` [ we hope you already did this too  💫] 
 
-- [ ] Now lets create a file named as `solution-2.md`.
+- [ ] Now let's create a file named as `solution-2.md`.
 
-- [ ] Now lets add the code for the smart contract deployed on Polygon zkEVM Testnet in `solutions-2.md`
+- [ ] Now let's add the code for the smart contract deployed on Polygon zkEVM Testnet in `solutions-2.md`
 
-- [ ] Create a Pull Request [PR] to the main repository
-
-- [ ] Take the `Transaction Hash` and `Contract Address` and put it the Airtable form below with rest of the details. 
+- [ ] **[VERY IMPORTANT STEP]** Take the `Transaction Hash` and `Contract Address` and put it the Airtable form below with rest of the details. 
 
 -------
 
