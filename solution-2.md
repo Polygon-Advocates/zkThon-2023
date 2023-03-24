@@ -1,5 +1,5 @@
 
-# zkThon challenge-1 solution
+# zkThon challenge-2 solution
 
 ## Basic ERC20 token contract
 
