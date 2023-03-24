@@ -8,6 +8,4 @@ This pull request is for the zkEVM Challenge 1. I have reviewed the zkEVM docume
 - [ ] I have added the details of my submission to the [Airtable form](https://airtable.com/shr21z0FfPImZfYBQ).
 - [ ] I have named my branch `username_zkthon`.
 
-## Additional Information
 
-[Add any additional information here if needed]
