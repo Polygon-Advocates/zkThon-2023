@@ -1,0 +1,15 @@
+# 🌳 Challenge III: Interact With A Deployed Contract On zkEVM Testnet 
+
+
+## Description
+
+Interact with an existing contract deployed to zkEVM Testnet. This challenge had intermediate difficulty and may take a bit to complete.
+
+## Solution
+From
+0x75E...115A2
+Interacted With (To)
+0x3aC...04D56
+```bash
+https://explorer.public.zkevm-test.net/tx/0xb86b977ef341499bde2212c0974842a30f7e12d5e22a91dffce0ddf8f6f036ac
+```
