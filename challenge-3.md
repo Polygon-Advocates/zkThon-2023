@@ -55,6 +55,10 @@ contract ZkThon {
 
 - Use your script to call the `submitUsername` function on the contract while supplying your github username (without the @). For a reference example on how this may be done, you could utilise [**Steph's video**](https://youtu.be/GNBHDCGFxtw). If you get stuck, you could always ask us questions in this [**Telegram group**](https://t.me/zkThon), and we'll attempt to assist you.
 
+**OR**
+
+- Use the deployed contract from challenge-2 to interact with. You can use any method call and get the txn hash of it.
+
 - Retrieve the transaction URL that was completed onchain with your updated github username and paste it into your new file for `solution-3.md`
 
 **Example:**
