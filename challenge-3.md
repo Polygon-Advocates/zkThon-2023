@@ -71,7 +71,9 @@ https://explorer.public.zkevm-test.net/tx/0xc62996c8599534f93a404a5b9614357aa36c
 
 - [ ] Now let's create a file named as `solution-3.md`.
 
-- [ ] Now let's paste the URL transaction into `solutions-3.md`
+- [ ] Paste the code used in your preferred language that is used to interact with the smart contract. 
+
+- [ ] Now also paste the URL transaction into `solutions-3.md`
 
 - [ ] **[VERY IMPORTANT STEP]** Take the `Transaction Hash` and `Contract Address` and put it the Airtable form below with rest of the details. 
 
