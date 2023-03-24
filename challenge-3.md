@@ -59,7 +59,7 @@ contract ZkThon {
 
 - Use the deployed contract from challenge-2 to interact with. You can use any method call and get the txn hash of it.
 
-- Retrieve the transaction URL that was completed onchain with your updated github username and paste it into your new file for `solution-3.md`
+- Retrieve the transaction URL that was completed onchain and paste it into your new file for `solution-3.md`
 
 **Example:**
 
