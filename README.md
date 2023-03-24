@@ -60,7 +60,7 @@ Please use the telegram group to better faciliate helping out with the challenge
 **Creators & Contributors:**
 
 - [Priyatham Varma](https://twitter.com/Mister_V_Varma)
-- [Yash Garg](https://twitter.com/megabyte0x)
+- [Megabyte](https://twitter.com/megabyte0x)
 - [Nuno](https://twitter.com/nunomiguelcg)
 - [Twenx](https://twitter.com/Twenx_)
 - [codingwithmanny](https://twitter.com/codingwithmanny)
