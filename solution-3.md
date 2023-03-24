@@ -1,7 +1,7 @@
 
 # zkThon challenge-3 solution
 
-## Contract Address: 0x63976CC5177FEA755340eE33C6c06D0690D09197
+### Contract Address: 0x63976CC5177FEA755340eE33C6c06D0690D09197
 
 ## This is the transaction url link
 
