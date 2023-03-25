@@ -1,5 +1,5 @@
 
-# 🪴 Challenge II: Deploy an ERC20 or ERC721 Token on the zkEVM Testnet
+# 🪴 Challenge II: Deploy an ERC20 or ERC721 Token on the zkEVM Testnet.
 
 
 ## Contract Address
