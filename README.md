@@ -31,9 +31,9 @@ Checkout the master notion page for full details: **[zkThon 2023](https://www.no
 
 - [x] Fork the repository
 - [x] Create a new branch `username_zkthon`, e.g. `PriyathamVarma_zkThon`
-- [ ] Create `solution-1.md`, `solution-2.md` and `solution-3.md` for respective solutions in the root directory.
-- [ ] LFG... Start solving the challenges.
-- [ ] Don't forget to look into [**Notion Page**](https://polygontechnology.notion.site/polygontechnology/zkThon-A-Week-Long-event-for-the-Polygon-Community-54cc518ee7ec428b813b02998f84c5df) for step by step challenge details.
+- [x] Create `solution-1.md`, `solution-2.md` and `solution-3.md` for respective solutions in the root directory.
+- [x] LFG... Start solving the challenges.
+- [x] Don't forget to look into [**Notion Page**](https://polygontechnology.notion.site/polygontechnology/zkThon-A-Week-Long-event-for-the-Polygon-Community-54cc518ee7ec428b813b02998f84c5df) for step by step challenge details.
 
 ---
 
