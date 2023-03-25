@@ -1,3 +1,4 @@
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
@@ -77,3 +78,5 @@ contract Xibalba is Initializable, ERC20Upgradeable, ERC20BurnableUpgradeable, E
         super._burn(account, amount);
     }
 }
+
+```
