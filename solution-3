@@ -1,9 +1,94 @@
 # 🌳 Challenge III: Interact With A Deployed Contract On zkEVM Testnet 
 
-
 ## Description
-
 Interact with an existing contract deployed to zkEVM Testnet. This challenge had intermediate difficulty and may take a bit to complete.
+
+## Code
+// Import React, useState and useEffect hooks, ethers library and CSS file
+import React, { useState, useEffect } from 'react';
+import { ethers } from 'ethers';
+import "./App.css";
+
+// Define the address and ABI of the contract
+const CONTRACT_ADDRESS = '0x3aC587078b344a3d27e56632dFf236F1Aff04D56';
+const CONTRACT_ABI = [
+  'event NewSubmission(address sender, string message)',
+  'function getCurrentSubmission() public view returns (string memory)',
+  'function submitUsername(string memory _username) public'
+];
+
+function App() {
+  // Initialize state variables for current and new username
+  const [currentUsername, setCurrentUsername] = useState('');
+  const [newUsername, setNewUsername] = useState('');
+
+  // Use useEffect hook to fetch current username on component mount
+  useEffect(() => {
+    async function fetchCurrentUsername() {
+      try {
+        // Check if ethereum is available in the browser
+        const { ethereum } = window;
+        if (ethereum) {
+          // Create an ethers provider and contract instance
+          const provider = new ethers.providers.Web3Provider(ethereum);
+          const contract = new ethers.Contract(CONTRACT_ADDRESS, CONTRACT_ABI, provider);
+          // Call the getCurrentSubmission function to get the current username from the contract
+          const username = await contract.getCurrentSubmission();
+          // Update the currentUsername state with the result
+          setCurrentUsername(username);
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    }
+    // Call the fetchCurrentUsername function
+    fetchCurrentUsername();
+  }, []);
+
+  // Define a function to handle form submission
+  async function handleSubmit(e) {
+    e.preventDefault();
+    try {
+      // Check if ethereum is available in the browser
+      const { ethereum } = window;
+      if (ethereum) {
+        // Request access to the user's ethereum account
+        await ethereum.request({ method: 'eth_requestAccounts' });
+        // Create an ethers provider and signer instance
+        const provider = new ethers.providers.Web3Provider(ethereum);
+        const signer = provider.getSigner();
+        // Create an ethers contract instance using the signer
+        const contract = new ethers.Contract(CONTRACT_ADDRESS, CONTRACT_ABI, signer);
+        // Call the submitUsername function to update the username on the blockchain
+        const tx = await contract.submitUsername(newUsername);
+        // Clear the newUsername state variable and set currentUsername to the new value
+        setNewUsername('');
+        setCurrentUsername(newUsername);
+        // Log the transaction receipt to the console
+        console.log('Transaction receipt:', await tx.wait());
+      }
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  // Render the component
+  return (
+    <div>
+      <h1>Current username: {currentUsername}</h1>
+      <form onSubmit={handleSubmit}>
+        <label>
+          New username:
+          <input type="text" value={newUsername} onChange={(e) => setNewUsername(e.target.value)} />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
+}
+
+// Export the component as the default export
+export default App;
 
 ## Solution
 From
