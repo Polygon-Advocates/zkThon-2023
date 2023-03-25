@@ -15,3 +15,7 @@ contract Monk is ERC20, ERC20Burnable, Ownable {
     }
 }
 
+
+TXN detail - 0xe0370d3b210b60bcfd13b18e14e44386a08af57c36e482bef6954e36420295cd
+Contract add - 0x205e1522c6d3feae87aa9e4130f3b3b5a8ac0300
+URL - https://testnet-zkevm.polygonscan.com/tx/0xe0370d3b210b60bcfd13b18e14e44386a08af57c36e482bef6954e36420295cd
