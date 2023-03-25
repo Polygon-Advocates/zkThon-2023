@@ -1,8 +1,12 @@
 
 # zkThon challenge-2 solution
 
-## Basic ERC20 token contract
+### Deployed contract address = 0x608cfd60770ccbabb175e2c947aa6582d4cdcefb
 
+## Block explorer URL for the contract
+[https://testnet-zkevm.polygonscan.com/address/0x608cfd60770ccbabb175e2c947aa6582d4cdcefb](https://testnet-zkevm.polygonscan.com/address/0x608cfd60770ccbabb175e2c947aa6582d4cdcefb)
+
+## Basic ERC20 token contract
 
 ```
 // SPDX-License-Identifier: MIT
