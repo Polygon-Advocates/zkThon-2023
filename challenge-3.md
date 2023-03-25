@@ -55,7 +55,11 @@ contract ZkThon {
 
 - Use your script to call the `submitUsername` function on the contract while supplying your github username (without the @). For a reference example on how this may be done, you could utilise [**Steph's video**](https://youtu.be/GNBHDCGFxtw). If you get stuck, you could always ask us questions in this [**Telegram group**](https://t.me/zkThon), and we'll attempt to assist you.
 
-- Retrieve the transaction URL that was completed onchain with your updated github username and paste it into your new file for `solution-3.md`
+**OR**
+
+- Use the deployed contract from challenge-2 to interact with. You can use any method call and get the txn hash of it.
+
+- Retrieve the transaction URL that was completed onchain and paste it into your new file for `solution-3.md`
 
 **Example:**
 
@@ -71,7 +75,9 @@ https://explorer.public.zkevm-test.net/tx/0xc62996c8599534f93a404a5b9614357aa36c
 
 - [ ] Now let's create a file named as `solution-3.md`.
 
-- [ ] Now let's paste the URL transaction into `solutions-3.md`
+- [ ] Paste the code used in your preferred language that is used to interact with the smart contract. 
+
+- [ ] Now also paste the URL transaction into `solutions-3.md`
 
 - [ ] **[VERY IMPORTANT STEP]** Take the `Transaction Hash` and `Contract Address` and put it the Airtable form below with rest of the details. 
 
