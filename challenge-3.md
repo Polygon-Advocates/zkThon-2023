@@ -1,4 +1,4 @@
-# 🌳 Challenge III: Interact With A Deployed Contract On zkEVM Testnet 
+# 🌳 Challenge III: Interact With A Deployed Contract On zkEVM Testnet.
 
 
 ## Code of the execution script:
