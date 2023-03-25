@@ -1,0 +1,3 @@
+Contract Address : 0x3ac587078b344a3d27e56632dff236f1aff04d56
+Transaction Hash : 0x8ff400fe9ff917a85b2f136b19386851a63cfe8dc25909348640147451b72cb4
+Transaction Link : https://explorer.public.zkevm-test.net/tx/0x8ff400fe9ff917a85b2f136b19386851a63cfe8dc25909348640147451b72cb4
