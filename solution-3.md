@@ -12,8 +12,6 @@ contract Dhruvang is ERC20 {
         _mint(msg.sender, 1000000 * 10 ** decimals());
     }
 }
-
-// Deploy the contract
 contract DhruvangDeployer {
     address public dhruvangAddress;
 
@@ -23,7 +21,6 @@ contract DhruvangDeployer {
     }
 }
 
-// Interact with the contract
 contract MyTokenInteraction {
     Dhruvang public dhruvang;
 
