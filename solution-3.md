@@ -14,7 +14,7 @@ CONTRACT-0xabe47da0ceF69581E85B39Ee1827845fB1a29F3D
   </head>
   <body>
     <h1></h1>
-    <p>Current submission: <span id=""></span></p>
+    <p><span id=""></span></p>
     <label for="newUsername"></label>
     <input type="text" id="newUsername" />
     <button class="submit-btn"></button>
