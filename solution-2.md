@@ -62,11 +62,10 @@ contract Zk20Token is ERC20, ERC20Burnable, ERC20Snapshot, Ownable, Pausable, ER
     }
 }</pre>
 -----------------------------------------------------------------------------
-BLOCKCHAIN PROOF URL:
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0x33470a06c4458d52615b1e2fd3843010544776a5/contracts
 
+# Transaction Hash
 https://explorer.public.zkevm-test.net/tx/0x37cd8e38a015c3d19cc6a93ba255fd30cabdbe659359d162a9f98487c5b68b53
------------------------------------------------------------------------------
 
-TX HASH: 0x37cd8e38a015c3d19cc6a93ba255fd30cabdbe659359d162a9f98487c5b68b53
 
-CONTRACT ADDRESS: 0x33470a06c4458d52615b1e2fd3843010544776a5
