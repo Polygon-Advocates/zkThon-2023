@@ -16,3 +16,8 @@ contract ethan is ERC20, ERC20Burnable, Ownable {
     }
 }
 ```
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0x39431F94bBdB269332BfbcD7dA375FE09F3BeFef
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0x81ac20297693561d9a94e3efe7b071700df2260fb2ee95578ccb55f026fbbc36
