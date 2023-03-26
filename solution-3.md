@@ -1,21 +1,116 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
-
-import "@openzeppelin/contracts@4.8.2/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/ERC20Burnable.sol";
-import "@openzeppelin/contracts@4.8.2/access/Ownable.sol";
-
-contract Monk is ERC20, ERC20Burnable, Ownable {
-    constructor() ERC20("Monk", "MOD") {
-        _mint(msg.sender, 10000 * 10 ** decimals());
-    }
-
-    function mint(address to, uint256 amount) public onlyOwner {
-        _mint(to, amount);
-    }
-}
-
-
 TXN detail - 0xe0370d3b210b60bcfd13b18e14e44386a08af57c36e482bef6954e36420295cd
 Contract add - 0x205e1522c6d3feae87aa9e4130f3b3b5a8ac0300
 URL - https://testnet-zkevm.polygonscan.com/tx/0xe0370d3b210b60bcfd13b18e14e44386a08af57c36e482bef6954e36420295cd
+
+
+
+### Code - 
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ZkThon Contract Interaction</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+  </head>
+  <body>
+    <h1>ZkThon Contract Interaction</h1>
+    <p>Current submission: <span id="currentSubmission"></span></p>
+    <label for="newUsername">New username:</label>
+    <input type="text" id="newUsername" />
+    <button class="submit-btn">Submit</button>
+
+    <script>
+      // Check if MetaMask is installed and connected
+      if (window.ethereum) {
+        const web3 = new Web3(window.ethereum);
+
+        // Request account access if needed
+        window.ethereum
+          .request({ method: "eth_requestAccounts" })
+          .then(() => {
+            // Define contract ABI
+            const abi = [
+              {
+                inputs: [
+                  {
+                    internalType: "string",
+                    name: "_username",
+                    type: "string",
+                  },
+                ],
+                stateMutability: "nonpayable",
+                type: "constructor",
+              },
+              {
+                inputs: [],
+                name: "getCurrentSubmission",
+                outputs: [
+                  {
+                    internalType: "string",
+                    name: "",
+                    type: "string",
+                  },
+                ],
+                stateMutability: "view",
+                type: "function",
+              },
+              {
+                inputs: [
+                  {
+                    internalType: "string",
+                    name: "_username",
+                    type: "string",
+                  },
+                ],
+                name: "submitUsername",
+                outputs: [],
+                stateMutability: "nonpayable",
+                type: "function",
+              },
+            ];
+
+            // Define contract address
+            const contractAddress =
+              "0x205e1522c6d3feae87aa9e4130f3b3b5a8ac0300";
+
+            // Create contract instance
+            const contract = new web3.eth.Contract(abi, contractAddress);
+            console.log(contract);
+
+            // Display current submission on page load
+            contract.methods.getCurrentSubmission().call((error, result) => {
+              if (error) {
+                console.error(error);
+                return;
+              }
+              document.getElementById("currentSubmission").textContent = result;
+            });
+
+            // Submit new username on button click
+            const btn = document.querySelector(".submit-btn");
+            function submitUsername() {
+              const newUsername = document.getElementById("newUsername").value;
+              contract.methods
+                .submitUsername(newUsername)
+                .send(
+                  { from: web3.eth.defaultAccount },
+                  (error, transactionHash) => {
+                    if (error) {
+                      console.error(error);
+                      return;
+                    }
+                    console.log("Transaction hash:", transactionHash);
+                  }
+                );
+            }
+            btn.addEventListener("click", submitUsername);
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+      } else {
+        console.error("MetaMask not detected");
+      }
+    </script>
+  </body>
+</html>
