@@ -52,7 +52,7 @@ const contract = new ethers.Contract(contractAddress, abi, signer);
 
 // Set the recipient and amount to transfer
 const recipient = '0xd9a9D3c265a875b0F97C45db50ade3c0a3fbEFd0';
-const amount = ethers.utils.parseUnits('200', 'ether'); // Transfer 1000 CHAD tokens
+const amount = ethers.utils.parseUnits('200', 'ether'); // Transfer 200 CHAD tokens
 
 // Call the transfer function
 async function transfer() {
