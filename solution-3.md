@@ -5,7 +5,7 @@ const provider = new ethers.providers.JsonRpcProvider(
   'https://rpc.public.zkevm-test.net'
 );
 
-const privateKey = '785ee23bcaaa673f13680723b8100f77a44087565d881fb0f07e9410e4bc16c4';
+const privateKey = "<PRIVATE_KEY>";
 const wallet = new ethers.Wallet(privateKey, provider);
 // Contract ABI and address
 const contractABI = [
