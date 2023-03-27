@@ -32,3 +32,35 @@ contract ChadToken is ERC20, ERC20Burnable, Ownable {
 }
 
 ```
+Ethersjs code to interact the contract's transfer function
+for transfering 200 tokens
+
+```ethersjs
+
+const { ethers } = require('ethers');
+require('dotenv').config();
+
+// Replace the contract address with your own value
+const contractAddress = '0xf90c6e4ef210f05415c9f0db42d5e92906388c06';
+
+// Set up a provider and signer using the private key from the environment variable
+const provider = new ethers.providers.JsonRpcProvider();
+const signer = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
+
+// Create an instance of the ChadToken contract
+const contract = new ethers.Contract(contractAddress, abi, signer);
+
+// Set the recipient and amount to transfer
+const recipient = '0xd9a9D3c265a875b0F97C45db50ade3c0a3fbEFd0';
+const amount = ethers.utils.parseUnits('200', 'ether'); // Transfer 1000 CHAD tokens
+
+// Call the transfer function
+async function transfer() {
+  const tx = await contract.transfer(recipient, amount);
+  console.log('Transaction hash:', tx.hash);
+}
+
+transfer();
+
+
+```
