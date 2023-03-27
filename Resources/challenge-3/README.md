@@ -1,13 +1,11 @@
 # Resources to help with challenge-3
 
-
-## Steps to Get Started 🏃🏻‍♂️ with the Challenge 
+## Steps to Get Started 🏃🏻‍♂️ with the Challenge
 
 - Configure your wallet for the zkEVM Testnet for development [here](https://wiki.polygon.technology/docs/zkEVM/develop#connecting-to-zkevm).
 
-- Checkout this [video](https://www.youtube.com/watch?v=GNBHDCGFxtw) by Steph Orpilla, Devrel Engineer - Polygon Labs to help you with setting up the local development and building a fullstack dApp with Polygon zkEVM, link to the repo [here](https://github.com/oceans404/fullstack-zkevm) for reference. 
-    
-- Claim some tokens required to work with Polygon zkEVM testnet [here](https://wiki.polygon.technology/docs/zkEVM/develop#bridge-assets-to-zkevm) 
+- Checkout this [video](https://www.youtube.com/watch?v=GNBHDCGFxtw) by Steph Orpilla, Devrel Engineer - Polygon Labs to help you with setting up the local development and building a fullstack dApp with Polygon zkEVM, link to the repo [here](https://github.com/oceans404/fullstack-zkevm) for reference.
+- Claim some tokens required to work with Polygon zkEVM testnet [here](https://wiki.polygon.technology/docs/zkEVM/develop#bridge-assets-to-zkevm)
 
 - Take a look at the following solidity contract for reference, which has been deployed to [this contract address on zkEVM Testnet](https://explorer.public.zkevm-test.net/address/0x3aC587078b344a3d27e56632dFf236F1Aff04D56).
 
@@ -41,7 +39,7 @@ contract ZkThon {
 }
 ```
 
-- Look over this solidity code to understand its functions and inputs to better understand the contract functionality. 
+- Look over this solidity code to understand its functions and inputs to better understand the contract functionality.
 
 - After understanding the contract functionality, create a simple script to interact with the contract in a programming language of your choosing by updating the `username` with your github username. To interact with the contract more easily, you could use a library like [ethers](https://docs.ethers.org/v5/), [viem](https://viem.sh), or [Web3.js](https://web3js.readthedocs.io/en/v1.8.2/), to name a few options.
 
