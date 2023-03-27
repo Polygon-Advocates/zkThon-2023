@@ -1,3 +1,10 @@
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0x5d2F5018D731ff35AAd1cB1cd621d3907D379AdB
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0x6473979ea458b3b13220ea89b5254c218b628faae1e6825d453c5d61f386191b
+
+
 ```sol
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
