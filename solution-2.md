@@ -5,8 +5,8 @@ import "@openzeppelin/contracts@4.8.2/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts@4.8.2/access/Ownable.sol";
 
-contract Vishwa is ERC20, ERC20Burnable, Ownable {
-    constructor() ERC20("Vishwa", "VIS") {
+contract cryptToken is ERC20, ERC20Burnable, Ownable {
+    constructor() ERC20("Max", "ROY") {
         _mint(msg.sender, 100000 * 10 ** decimals());
     }
 
