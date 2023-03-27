@@ -17,3 +17,5 @@ contract TILT is ERC20, ERC20Burnable, Ownable, ERC20Permit {
     }
 }
 ```
+TXN HASH :https://testnet-zkevm.polygonscan.com/tx/0x740615d9f76bdc456ad37c0da9d1c642b9d224d76b4ea655b0eb6bd043936d10
+CONTRACT ADDRESS: https://testnet-zkevm.polygonscan.com/address/0xb0e8cdcd653fb22f5911b8f8608947df55e5bf75
