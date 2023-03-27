@@ -1,7 +1,11 @@
 Deployed the following Contract that permits anyone to mint a ERC721 for the zkThon!
-TXN HASH: 0xac9f5f62d575138d604f80d4de0ff35115da0efdcc1cea614bae7524ee9d7a13
+
+**TXN HASH:** 0xac9f5f62d575138d604f80d4de0ff35115da0efdcc1cea614bae7524ee9d7a13
+
 ```https://explorer.public.zkevm-test.net/tx/0xac9f5f62d575138d604f80d4de0ff35115da0efdcc1cea614bae7524ee9d7a13```
-CONTRACT ADDRESS: 0xF6b705595E95c8D94E22B38570e79f8BaFa39558
+
+**CONTRACT ADDRESS:** 0xF6b705595E95c8D94E22B38570e79f8BaFa39558
+
 ```https://explorer.public.zkevm-test.net/address/0xF6b705595E95c8D94E22B38570e79f8BaFa39558```
 
 
