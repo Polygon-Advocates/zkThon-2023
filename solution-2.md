@@ -1,3 +1,4 @@
+'''sol
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
@@ -15,3 +16,4 @@ contract OurToken is ERC20, ERC20Burnable, Ownable{
         _mint(to, amount);
     }
 }
+'''
