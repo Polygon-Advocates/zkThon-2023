@@ -1,7 +1,7 @@
 # 🪴 Challenge II: Deploy an ERC20 or ERC721 Token on the zkEVM Testnet.
 
-# Contract Address for ERC20 Contract on Polygon zkEVM - 
-0x722185db45507D5f74d599344c2fe4947C43e2a9
+# Contract Address for ERC20 Contract on Polygon zkEVM - 0x722185db45507D5f74d599344c2fe4947C43e2a9
+
 https://explorer.public.zkevm-test.net/address/0x722185db45507D5f74d599344c2fe4947C43e2a9
 
 # Transaction Hash for creation of contract - 
