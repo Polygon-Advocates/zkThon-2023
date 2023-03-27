@@ -30,7 +30,7 @@ getCurrentSubmission();
 submitUsername('NEW_USERNAME');
 
 
-# Contract Address :
+# Contract Address  :
 https://explorer.public.zkevm-test.net/address/0x3aC587078b344a3d27e56632dFf236F1Aff04D56
 
 # Transaction Hash of Contract Interaction where I send few tokens to my other wallet address 0x3e18832fC412Cc636D1fF315236694126D71D376 :
