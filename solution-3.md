@@ -1,49 +1,38 @@
-I created a different token than solution in this contract and interacted with it using call method.Following is the code,transaction has of creation and interaction and contract address.
-
 # Code :
-// SPDX-License-Identifier: MIT
-
-pragma solidity ^0.8.0;
-
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-
-contract Dhruvang is ERC20 {
-    constructor() ERC20("Dhruvang", "DTK") {
-        _mint(msg.sender, 1000000 * 10 ** decimals());
-    }
+const { ethers } = require('ethers');
+// Ethereum network and provider
+const network = 'polygon';
+const provider = new ethers.providers.JsonRpcProvider(
+  'https://rpc.public.zkevm-test.net'
+);
+// Wallet
+const privateKey = '785ee23bcaaa673f13680723b8100f77a44087565d881fb0f07e9410e4bc16c4';
+const wallet = new ethers.Wallet(privateKey, provider);
+// Contract ABI and address
+const contractABI = [
+  'event NewSubmission(address sender, string message)',
+  'function getCurrentSubmission() public view returns (string memory)',
+  'function submitUsername(string memory _username) public',
+];
+const contractAddress = '0x3aC587078b344a3d27e56632dFf236F1Aff04D56';
+// Contract instance
+const contract = new ethers.Contract(contractAddress, contractABI, wallet);
+// Example function calls
+async function getCurrentSubmission() {
+  const result = await contract.getCurrentSubmission();
+  console.log(result);
 }
-contract DhruvangDeployer {
-    address public dhruvangAddress;
-
-    function deployMyToken() public {
-        Dhruvang token = new Dhruvang();
-        dhruvangAddress = address(token);
-    }
+async function submitUsername(newUsername) {
+  await contract.submitUsername(newUsername);
+  console.log('Submitted new username:', newUsername);
 }
+// Run example function calls
+getCurrentSubmission();
+submitUsername('NEW_USERNAME');
 
-//Interacting with the contract
-
-contract MyTokenInteraction {
-    Dhruvang public dhruvang;
-
-    constructor(address _DhruvangAddress) {
-        dhruvang = Dhruvang(_DhruvangAddress);
-    }
-
-    function transfer(address _to, uint256 _amount) public {
-        dhruvang.transfer(_to, _amount);
-    }
-
-    function balanceOf(address _address) public view returns (uint256) {
-        return dhruvang.balanceOf(_address);
-    }
-}
 
 # Contract Address :
-https://explorer.public.zkevm-test.net/address/0x1205Fe5849C6EC714e9Cd93660AC073426400b16
-
-# Transaction Hash of Token Creation :
-https://explorer.public.zkevm-test.net/tx/0x25c14499cc63b9155940ea015501295bcfdd7a5256f24caaec89b7afed0d5fe9
+https://explorer.public.zkevm-test.net/address/0x3aC587078b344a3d27e56632dFf236F1Aff04D56
 
 # Transaction Hash of Contract Interaction where I send few tokens to my other wallet address 0x3e18832fC412Cc636D1fF315236694126D71D376 :
-https://explorer.public.zkevm-test.net/tx/0x6e553594f2a42e5b5abb2cbaffdec6ee57830341055ecc002bd496cc68f3029a
+https://explorer.public.zkevm-test.net/tx/0xd574e9a6f6948805e8bfca142773c8294762600f8ecdf31c833460d5664b5e5e
