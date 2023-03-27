@@ -21,6 +21,8 @@ contract DhruvangDeployer {
     }
 }
 
+//Interacting with the contract
+
 contract MyTokenInteraction {
     Dhruvang public dhruvang;
 
