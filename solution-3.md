@@ -2,7 +2,7 @@
 https://explorer.public.zkevm-test.net/tx/0x7c5973548b33d383070bbd6550788225641f29bf959ddcdcc04c9565719ecfcf
 
 # Code
-
+```
 const Web3 = require('web3');
 const tokenAbi = process.env.TOKEN_ABI;
 
@@ -35,3 +35,4 @@ async function transferTokens(toAddress, amount) {
 }
 
 transferTokens(' To address ', 1); // Add to address here
+```
