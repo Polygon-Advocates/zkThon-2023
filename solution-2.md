@@ -1,9 +1,8 @@
+    // SPDX-License-Identifier: MIT
 
+    pragma solidity ^0.8.9;
 
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
-
-contract MyToken {
+    contract MyToken {
     
     mapping (address => uint256) public balanceOf;
     string public name = "Shalimar";
@@ -48,4 +47,4 @@ contract MyToken {
         emit Approval(msg.sender, _spender, _value);
         return true;
     }
-}
+    }
