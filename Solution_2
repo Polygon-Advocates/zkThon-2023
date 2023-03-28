@@ -1,0 +1,25 @@
+```sol
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts@4.8.2/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/ERC20Burnable.sol";
+import "@openzeppelin/contracts@4.8.2/access/Ownable.sol";
+
+contract Zk_Aryan is ERC20, ERC20Burnable, Ownable {
+    constructor() ERC20("zk_Aryan", "zkAR") {
+        _mint(msg.sender, 10000 * 10 ** decimals());
+    }
+
+    function mint(address to, uint256 amount) public onlyOwner {
+        _mint(to, amount);
+    }
+}
+```
+-------------------------------------------------------------------------------
+
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0xe3E9056F0F8a423D80071660eEA66329bce08464
+
+# TransactionHash
+https://explorer.public.zkevm-test.net/tx/0x7fd891436e5d9ca8544f8d6e863a42e0402cef094a668cb0339036401ff0e0cb
