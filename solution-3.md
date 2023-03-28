@@ -10,7 +10,7 @@ Contract Address - 0xC5a867cc1E6c39bD5E6453F1792FEB1d55FaF72C
 https://explorer.public.zkevm-test.net/address/0xC5a867cc1E6c39bD5E6453F1792FEB1d55FaF72C/contracts
 ```
 
-Code -
+Smart Contract Code -
 
 ```solidity
 
@@ -31,4 +31,40 @@ contract AVT_zkThon is ERC20, ERC20Burnable, Ownable {
     }
 }
 
+```
+JS file code -
+```javascript
+const Web3 = require('web3');
+
+// Your contract's ABI goes here
+const ABI = process.env.ABI;
+// Http Providers 
+const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
+// Contract Address
+const contractAddress = "0xC5a867cc1E6c39bD5E6453F1792FEB1d55FaF72C";
+// Account you want to transfer token from
+const fromAddress = '0x64436CeA8886a5E19211E620753E735B7AA43A40';
+// Private key of that account
+const privateKey = process.env.PRIVATE_KEY;
+// contract instance
+const token = new web3.eth.Contract(ABI, contractAddress);
+// funtion to transfer tokens
+async function transferTokens(toAddress, amount) {
+  const nonce = await web3.eth.getTransactionCount(fromAddress);
+  const gasPrice = await web3.eth.getGasPrice();
+  const txParams = {
+    nonce: nonce,
+    gasPrice: gasPrice,
+    gasLimit: 500000,
+    to: tokenAddress,
+    value: 0,
+    data: token.methods.transfer(toAddress, amount).encodeABI()
+  };
+  const signedTx = await web3.eth.accounts.signTransaction(txParams, privateKey);
+  const txReceipt = await web3.eth.sendSignedTransaction(signedTx.rawTransaction);
+  console.log(`Transaction hash: ${txReceipt.transactionHash}`);
+  console.log(`Status: ${txReceipt.status}`);
+}
+//invoking the function
+transferTokens(' To address ', 1); // Add to address here
 ```
