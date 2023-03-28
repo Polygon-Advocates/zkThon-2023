@@ -6,7 +6,7 @@ import "@openzeppelin/contracts@4.8.2/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts@4.8.2/access/Ownable.sol";
 
-contract Spring is ERC20, ERC20Burnable, Ownable {
+contract AASHRYA is ERC20, ERC20Burnable, Ownable {
     constructor() ERC20("AASHRYA", "ASH") {
         _mint(msg.sender, 1000 * 10 ** decimals());
     }
