@@ -16,3 +16,8 @@ contract TestZkthon is ERC20, ERC20Burnable, Ownable {
     }
 }
 ```
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0x2861bc08205e0d151339eae69be34b485e65ef98
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0xc62538c888b8ce01e9efd39550a062dfe8ea07ce5079e84c7a19408cc0c7add4
