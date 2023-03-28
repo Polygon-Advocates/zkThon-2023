@@ -1,0 +1,43 @@
+Challenge II: Deploy an ERC20 or ERC721 Token on the zkEVM Testnet
+
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0xaF6d204da0162Bebe6354134AE05d84622193257
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0xce9e7117ed19aefc08fdf00c6061ae8638b293b9f556cffb845740912f345d5c
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts@4.8.2/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/ERC20Burnable.sol";
+import "@openzeppelin/contracts@4.8.2/security/Pausable.sol";
+import "@openzeppelin/contracts@4.8.2/access/Ownable.sol";
+
+contract Manishig is ERC20, ERC20Burnable, Pausable, Ownable {
+    constructor() ERC20("manishig", "MIG") {
+        _mint(msg.sender, 1000000 * 10 ** decimals());
+    }
+
+    function pause() public onlyOwner {
+        _pause();
+    }
+
+    function unpause() public onlyOwner {
+        _unpause();
+    }
+
+    function mint(address to, uint256 amount) public onlyOwner {
+        _mint(to, amount);
+    }
+
+    function _beforeTokenTransfer(address from, address to, uint256 amount)
+        internal
+        whenNotPaused
+        override
+    {
+        super._beforeTokenTransfer(from, to, amount);
+    }
+}
+```
