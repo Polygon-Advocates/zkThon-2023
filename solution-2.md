@@ -58,3 +58,7 @@ contract Applezk is ERC20, ERC20Burnable, Pausable, Ownable, ERC20Permit, ERC20V
     }
 }
 ***
+
+
+deploy tx https://testnet-zkevm.polygonscan.com/tx/0x65110487b76948c42f8d4227ef93f4b17160c6c6b805d2c31cbbaa3307899943
+contact   0xf1610470b76c9cb16de11f74eead3adfe2e2711c
