@@ -17,3 +17,8 @@ contract TestRaju is ERC20, ERC20Burnable, Ownable, ERC20FlashMint {
     }
 }
 ```
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0x48e830c04bf9cd63c0d680c1b45f466ef59e4b7a
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0x76e25a93bb5dc61cb5ceb93b7655ca8999ba49feeebfe251e8c621d1e48c4e71
