@@ -18,8 +18,6 @@ TX: https://explorer.public.zkevm-test.net/tx/0xdd5381d0f7bd93b1a9e212367427194f
       <br />
       <button id="transact">Execute!</button>
       <script>
-      //const { Contract, JsonRpcProvider, Wallet } = require("ethers");
-  //require('dotenv').config()
   const ABI = [
     {
       type: "constructor",
