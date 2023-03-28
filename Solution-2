@@ -1,0 +1,29 @@
+```sol
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts@4.8.2/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts@4.8.2/access/Ownable.sol";
+import "@openzeppelin/contracts@4.8.2/utils/Counters.sol";
+
+contract ZkLaunch is ERC721, Ownable {
+    using Counters for Counters.Counter;
+
+    Counters.Counter private _tokenIdCounter;
+
+    constructor() ERC721("zkLaunch", "zkL") {}
+
+    function _baseURI() internal pure override returns (string memory) {
+        return "https://fairxyz.twic.pics/video/polygon_zkevm/ZKM_1mb.mp4";
+    }
+
+    function safeMint(address to) public onlyOwner {
+        uint256 tokenId = _tokenIdCounter.current();
+        _tokenIdCounter.increment();
+        _safeMint(to, tokenId);
+    }
+}
+```
+
+Contract: https://explorer.public.zkevm-test.net/address/0x7a0e02C5ADCD6eD3102f20CEAB83abf800Ca7D41
+Hash: https://explorer.public.zkevm-test.net/tx/0xfc1ffc81d2a37af20f84217a03cfb2fe5d39313ff57742ece27b5edb7c7b386a
