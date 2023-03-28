@@ -7,14 +7,22 @@ https://explorer.public.zkevm-test.net/tx/0x353ef6075b7815bff8487d06aac8feb60fe8
 '''py
 
 import json
+
 from brownie import network, accounts, MyToken, config
+
 from web3 import Web3
+
 from web3.contract import Contract
 
+
 def mint_shantanu_token():
+
     # Set up the connection to the Ethereum network
+    
     network.gas_limit(8000000)
+    
     network.connect("mainnet")
+    
 	#infura id removed
     w3 = Web3(Web3.HTTPProvider('https://mainnet.infura.io/v3/your_infura_project_id'))
 
