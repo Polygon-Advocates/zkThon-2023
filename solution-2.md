@@ -7,8 +7,8 @@ import "@openzeppelin/contracts@4.8.2/security/Pausable.sol";
 import "@openzeppelin/contracts@4.8.2/access/Ownable.sol";
 import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/draft-ERC20Permit.sol";
 
-contract FartZk is ERC20, ERC20Burnable, Pausable, Ownable, ERC20Permit {
-    constructor() ERC20("fartZk", "FZ") ERC20Permit("fartZk") {
+contract K224kk26 is ERC20, ERC20Burnable, Pausable, Ownable, ERC20Permit {
+    constructor() ERC20("k224kk26", "KZ") ERC20Permit("k224kk26") {
         _mint(msg.sender, 100000 * 10 ** decimals());
     }
 
