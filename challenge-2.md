@@ -52,3 +52,9 @@ https://explorer.public.zkevm-test.net/tx/0xYouTransactionAddress
 [**Submission Challenge II form**](https://airtable.com/shr21z0FfPImZfYBQ)
 
 *This is an Important step please don't skip.*
+
+-------
+
+## Resources
+
+- [Submitting Challenge 2 in 3 mins](https://youtu.be/6go0vPMc9Uk)
