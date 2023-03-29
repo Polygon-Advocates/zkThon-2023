@@ -32,3 +32,6 @@ contract Fart5566 is ERC20, ERC20Burnable, Pausable, Ownable, ERC20Permit {
         super._beforeTokenTransfer(from, to, amount);
     }
 }
+Contract 0x8de23769f6a4fa4d7061a49425d307c18dfdea56
+
+Hash 0x8c74e94bc06d9f110bb7fb4aa11e9a34029651773aa1f0de31dd79f101148479
