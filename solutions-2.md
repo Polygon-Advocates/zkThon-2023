@@ -62,3 +62,6 @@ contract Volt is ERC20, ERC20Burnable, ERC20Snapshot, Ownable, Pausable, ERC20Pe
         super._burn(account, amount);
     }
 }
+
+* Contract * 0x8422c278f287013702f6563d394cc5812ebf4747
+* Deploy link * https://testnet-zkevm.polygonscan.com/tx/0xa58bd06ac9e1d88b64e8c36bc3d3fd28526b23a5ba3b7126ca360b45512f84f3
