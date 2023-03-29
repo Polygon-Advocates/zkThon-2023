@@ -1,0 +1,28 @@
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0x33C3a736067Fd6F7cF261358da0dA438AfFE277d
+
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0x2f525cccaa6c5bcfd1df9f604817f5916a503a8fee5da64c347967bb635f9c40
+
+
+### SourceCode
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+contract Batman is ERC20, ERC20Burnable, Ownable {
+    constructor() ERC20("Batman", "BAT") {
+        _mint(msg.sender, 25052052 * 10 ** decimals());
+    }
+
+    function mint(address to, uint256 amount) public onlyOwner {
+        _mint(to, amount);
+    }
+}
+```
