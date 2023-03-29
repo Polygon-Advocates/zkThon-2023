@@ -32,3 +32,6 @@ contract Beem is ERC20, ERC20Burnable, Pausable, Ownable, ERC20Permit {
         super._beforeTokenTransfer(from, to, amount);
     }
 }
+
+contract address 0xbfee7c9c687d9e6900ce12465dbdf92c706d3bf8
+Hash 0x2d1bcd68d5a3fc72e9d8a9e7550bc483423bbd7369d05220031c705f7167f86e
