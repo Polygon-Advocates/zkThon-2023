@@ -1,4 +1,4 @@
-***sol
+***solution
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
@@ -33,4 +33,12 @@ contract Andyzk is ERC20, ERC20Burnable, Pausable, Ownable, ERC20Permit {
         super._beforeTokenTransfer(from, to, amount);
     }
 }
+***
+
+***
+tx hash 0x3289512b5d51065a9c342489d13ced4ca731e8eb3ec2d0a91dada0fd0cca4539
+***
+cnt addr 0xb9d2dc931558c87dc7f9a0fadfd4817a7aded25d
+***
+link https://testnet-zkevm.polygonscan.com/tx/0x3289512b5d51065a9c342489d13ced4ca731e8eb3ec2d0a91dada0fd0cca4539
 ***
