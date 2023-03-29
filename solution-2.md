@@ -32,3 +32,7 @@ contract K224kk26 is ERC20, ERC20Burnable, Pausable, Ownable, ERC20Permit {
         super._beforeTokenTransfer(from, to, amount);
     }
 }
+ 
+ contract 0xa398df340f43ad9eafe7543fa31d89c4dc5eaa47
+ 
+ hash 0x7140ade1c0fa1f8d1d79d408aa820956e12219495e86decf5fdbb4d719e896e5
