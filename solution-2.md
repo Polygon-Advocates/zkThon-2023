@@ -58,3 +58,5 @@ contract ZKcobur is ERC20, ERC20Burnable, Pausable, Ownable, ERC20Permit, ERC20V
     }
 }
 ***
+* contract adress 0xd73db475b0129d049d65918a26ac35fe1e234250 *
+* tx hash 0x4400f69663748880af4260df3e2445ef45c9beb696e8dc1640c803640fbf39cf *
