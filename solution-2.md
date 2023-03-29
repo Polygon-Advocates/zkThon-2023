@@ -1,4 +1,4 @@
-'''sol
+```sol
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
@@ -15,4 +15,4 @@ contract Zkthon is ERC20, ERC20Burnable, Ownable {
         _mint(to, amount);
     }
 }
-'''
+```
