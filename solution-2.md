@@ -1,6 +1,7 @@
 Transaction link - https://testnet-zkevm.polygonscan.com/tx/0xbbdf80d77d820afc2c03f5e39baf8d386fb7d3276811af80fde17cadebf9af49
 
 Transaction hash 0xbbdf80d77d820afc2c03f5e39baf8d386fb7d3276811af80fde17cadebf9af49
+
 Contract address 0xd50E11C947676b7877D3079dDA8cEd3DDeEfed07
 
 
