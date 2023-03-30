@@ -1,0 +1,24 @@
+Challenge II: Deploy an ERC20 Token on the zkEVM Testnet
+
+Source Code
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts@4.8.2/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts@4.8.2/access/Ownable.sol";
+
+contract Vidhigoyal is ERC20, Ownable {
+    constructor() ERC20("vidhigoyal", "VG") {
+        _mint(msg.sender, 950095 * 10 ** decimals());
+    }
+
+    function mint(address to, uint256 amount) public onlyOwner {
+        _mint(to, amount);
+    }
+}
+
+```
+
+>Contract Link - https://explorer.public.zkevm-test.net/address/0xBd642c10890C6a00ACF26abD48A7c70E76aa642E
+>Transaction  - https://explorer.public.zkevm-test.net/tx/0x03530368aa1fa5da43ac132553e182c10154b7a8d64cbbf7e57615fb2386d6cc
