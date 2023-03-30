@@ -1,34 +1,27 @@
 ```sol
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts@4.8.2/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/ERC20Burnable.sol";
-import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/ERC20Snapshot.sol";
-import "@openzeppelin/contracts@4.8.2/access/Ownable.sol";
-import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/draft-ERC20Permit.sol";
-import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/ERC20FlashMint.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract KuzzyTest is ERC20, ERC20Burnable, ERC20Snapshot, Ownable, ERC20Permit, ERC20FlashMint {
-    constructor() ERC20("kuzzy Test", "KZT") ERC20Permit("kuzzy Test") {
-        _mint(msg.sender, 10000000 * 10 ** decimals());
+contract Token is ERC20 {
+    bool internal isCreateToken = false;
+
+    constructor() ERC20("kuzzy", "  KZY") {}
+
+    function createTokens(address _recipient) external {
+        require(isCreateToken == false);
+        _mint(_recipient, 1000000000000000000000000);
+        isCreateToken = true;
     }
 
-    function snapshot() public onlyOwner {
-        _snapshot();
-    }
-
-    function mint(address to, uint256 amount) public onlyOwner {
-        _mint(to, amount);
-    }
-
-    // The following functions are overrides required by Solidity.
-
-    function _beforeTokenTransfer(address from, address to, uint256 amount)
-        internal
-        override(ERC20, ERC20Snapshot)
-    {
-        super._beforeTokenTransfer(from, to, amount);
+    function payOneToken(address _sender, address _recipient) external {
+        _transfer(_sender, _recipient, 1000000000000000000);
     }
 }
 ```
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0xbd0771a5c5f05c5ce5701389f9bf8dd4a4508abb
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0x322753ffc6071df65352d3ed4081711661b485b2328225dcf7137e1866c403cb
