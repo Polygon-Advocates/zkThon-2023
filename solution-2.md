@@ -17,7 +17,7 @@ contract ZkTHONToken is ERC20 {
 
 ## Contract Address
 
-[Contract Address : https://testnet-zkevm.polygonscan.com/address/0x0ea7bf5f7afd9f4c176f1e9083595a8e06b06454](https://testnet-zkevm.polygonscan.com/address/**0x0ea7bf5f7afd9f4c176f1e9083595a8e06b06454)
+[Contract Address : https://testnet-zkevm.polygonscan.com/address/0x0ea7bf5f7afd9f4c176f1e9083595a8e06b06454](https://testnet-zkevm.polygonscan.com/address/0x0ea7bf5f7afd9f4c176f1e9083595a8e06b06454)
 
 ## Transaction Address
 
