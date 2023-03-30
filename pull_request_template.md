@@ -7,5 +7,5 @@ This pull request is for the zkEVM Challenge 1. I have reviewed the zkEVM docume
 - [ ] I have created a new file named `solution-1.md` for this challenge.
 - [ ] I have added the details of my submission to the [Airtable form](https://airtable.com/shr21z0FfPImZfYBQ).
 - [ ] I have named my branch `username_zkthon`.
-
+- [ ] I have named my PR `username_zkthon`.
 
