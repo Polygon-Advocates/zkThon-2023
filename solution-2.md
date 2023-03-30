@@ -18,5 +18,5 @@ contract Zkman is ERC20, ERC20Burnable, Ownable {
 '''
 Contract 0xfcC3E7c2757062894Ba72aE6507a26be2ccBA87d
 Transaction Hash:0x2d3e31e5be022b762518eea8932ea16fbc83035f80122b459694510eb86b9496
-
+}
 '''
