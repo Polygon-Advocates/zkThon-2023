@@ -1,46 +1,27 @@
 ```sol
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts@4.8.2/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/ERC20Burnable.sol";
-import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/ERC20Snapshot.sol";
-import "@openzeppelin/contracts@4.8.2/access/Ownable.sol";
-import "@openzeppelin/contracts@4.8.2/security/Pausable.sol";
-import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/draft-ERC20Permit.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract Crusher is ERC20, ERC20Burnable, ERC20Snapshot, Ownable, Pausable, ERC20Permit {
-    constructor() ERC20("Crusher", "CSR") ERC20Permit("Crusher") {
-        _mint(msg.sender, 10000 * 10 ** decimals());
+contract Token is ERC20 {
+    bool internal isCreateToken = false;
+
+    constructor() ERC20("Zkthonchallenge3", "ZC3") {}
+
+    function createTokens(address _recipient) external {
+        require(isCreateToken == false);
+        _mint(_recipient, 1000000000000000000000000);
+        isCreateToken = true;
     }
 
-    function snapshot() public onlyOwner {
-        _snapshot();
-    }
-
-    function pause() public onlyOwner {
-        _pause();
-    }
-
-    function unpause() public onlyOwner {
-        _unpause();
-    }
-
-    function mint(address to, uint256 amount) public onlyOwner {
-        _mint(to, amount);
-    }
-
-    function _beforeTokenTransfer(address from, address to, uint256 amount)
-        internal
-        whenNotPaused
-        override(ERC20, ERC20Snapshot)
-    {
-        super._beforeTokenTransfer(from, to, amount);
+    function payOneToken(address _sender, address _recipient) external {
+        _transfer(_sender, _recipient, 1000000000000000000);
     }
 }
 ```
 # Contract Address
-https://explorer.public.zkevm-test.net/address/0x821ed4e18fe9ac0f49823a3b43ffe5465139f3ff
+https://explorer.public.zkevm-test.net/address/0x6f530235b61700d515215b95c29e4ea9be283108
 
 # Transaction Address
-https://explorer.public.zkevm-test.net/tx/0x1520072494a3850d30396331ca6093e81cb5d7ce143da0f3f9323e621583df4f
+https://explorer.public.zkevm-test.net/tx/0xa426a8258bcca3916dd605761e93adac2acd27286bc1c8365b3f742641653261
