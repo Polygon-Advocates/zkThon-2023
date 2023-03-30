@@ -9,9 +9,9 @@ Transaction Hash - 0x93adb298fdfa9717e869aae187697b3139369967f16948c386a6dac91f1
 const Web3 = require('web3');
 const tokenAbi = process.env.TOKEN_ABI;
 
-const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
+const web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/v3/your_infura_project_id'));
 
-const tokenAddress = '0x052CE120885215206B94302A1EB9fCEc361482F9'; // Replace with the address of your token
+const tokenAddress = '0x7b000c52bf193bc82cbef591466a5e671ad027a4'; // Replace with the address of your token
 const fromAddress = ''; // Replace with the address you want to mint tokens from
 const privateKey = 'YOUR_PRIVATE_KEY'; // Replace with your private key
 
@@ -34,6 +34,6 @@ async function mintToken(toAddress, amount) {
   const txReceipt = await web3.eth.sendSignedTransaction(signedTx.rawTransaction);
 }
 
-mintToken('Address', 10);
+mintToken('Address', 10000000);
 
 ```
