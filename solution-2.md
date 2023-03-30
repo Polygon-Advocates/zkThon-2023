@@ -58,3 +58,7 @@ contract CynaralZK is ERC20, ERC20Burnable, Pausable, Ownable, ERC20Permit, ERC2
     }
 }
 ***
+
+Tx Hash 0x0f19c19226dbd51cecf9b31dba8bd1c33869e4810a8afd233c827f9b3a5cf9d9
+Contract address 0x328c19338628965d84588a421e49d12a8eb9db53
+Deploy link https://testnet-zkevm.polygonscan.com/tx/0x0f19c19226dbd51cecf9b31dba8bd1c33869e4810a8afd233c827f9b3a5cf9d9
