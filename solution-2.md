@@ -39,3 +39,8 @@ contract Crusher is ERC20, ERC20Burnable, ERC20Snapshot, Ownable, Pausable, ERC2
     }
 }
 ```
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0x821ed4e18fe9ac0f49823a3b43ffe5465139f3ff
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0x1520072494a3850d30396331ca6093e81cb5d7ce143da0f3f9323e621583df4f
