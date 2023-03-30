@@ -1,0 +1,20 @@
+## ERC20 Token on the zkEVM Testnet
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract Hulk is ERC20 {
+    constructor() ERC20("Hulk", "HK") {
+        _mint(msg.sender, 19621962 * 10 ** decimals());
+    }
+}
+```
+
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0x65582744499096227BD11E1AFb1aBF86Bc12A116
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0xb2e9971d32bb54c87b67ddb46e13273b26f23ba21e024426ce90f9d3430ead7e
