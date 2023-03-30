@@ -16,3 +16,10 @@ contract IndiCHOR is ERC20, ERC20Burnable, Ownable {
     }
 }
 ```
+
+
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0x0a05e838aa6c77dc52dd9626b9a653786440dc9a
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0x15b49a8c2d82b66ab00b602b18a3d3a480e17d93675505cc656c954b26994bd9
