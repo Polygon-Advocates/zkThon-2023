@@ -1,0 +1,33 @@
+## 🪴 Challenge II: Deploy an ERC721 Token on the zkEVM Testnet
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts@4.8.2/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts@4.8.2/token/ERC721/extensions/ERC721Burnable.sol";
+import "@openzeppelin/contracts@4.8.2/access/Ownable.sol";
+import "@openzeppelin/contracts@4.8.2/utils/Counters.sol";
+
+contract Negative2787 is ERC721, ERC721Burnable, Ownable {
+    using Counters for Counters.Counter;
+
+    Counters.Counter private _tokenIdCounter;
+
+    constructor() ERC721("Negative2787", "n2787") {}
+
+    function _baseURI() internal pure override returns (string memory) {
+        return "https://dl.openseauserdata.com/cache/originImage/files/0cd46e391365f2a8346343bc000f9bab.jpg";
+    }
+
+    function safeMint(address to) public onlyOwner {
+        uint256 tokenId = _tokenIdCounter.current();
+        _tokenIdCounter.increment();
+        _safeMint(to, tokenId);
+    }
+}
+```
+---------------------------------------------
+# [Contract Address] (https://explorer.public.zkevm-test.net/address/0xDc2E60b9503f8e769E53C18313522bE08Cc0Eaa8)
+
+# [Transaction] (https://explorer.public.zkevm-test.net/tx/0x7d87e1b88197c90f1624ee5764156afffe8c250c91713aac86150c33b4f692f2)
