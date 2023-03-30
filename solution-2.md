@@ -10,4 +10,4 @@ contract MyToken is ERC20 {
 https://explorer.public.zkevm-test.net/address/0xa509D02eC36a8e37a794141701b3161Dcf902FCc/contracts
 
 # Transaction Address
-https://explorer.public.zkevm-test.net/tx/0xebf56ae11df9959b5e912216eb60a2b885407bbda93fa246c2dc1eab4a8b5185
+https://explorer.public.zkevm-test.net/tx/0xfcb2d8ec7adc2229b3d2557125e2d89a2f98d806ac47137c9770ae393e0bd5e9
