@@ -34,3 +34,6 @@ contract Bund is ERC20, ERC20Burnable, Pausable, Ownable, ERC20Permit {
 }
 
 contract 0x7fe51989c6e6f6ee3f7025f068e78dea7d648854
+
+https://testnet-zkevm.polygonscan.com/tx/0x6eb5dfda3843fa43e92faacc272f0108bd74865c262ef2de872ab4f6dcdac135
+
