@@ -1,4 +1,4 @@
-Contract HULIo token: 0x5eb7c80196baa2414a404ba684d149a81293f056
+Contract HULIO token: 0x5eb7c80196baa2414a404ba684d149a81293f056
 
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
