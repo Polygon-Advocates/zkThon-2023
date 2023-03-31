@@ -4,7 +4,7 @@ Contract Address - 0x586a4bee7e8e770486f27b2209bd90b87913b76d
 
 Transaction URL - https://testnet-zkevm.polygonscan.com/tx/0xd352371650f46b1f694381a0df0bae926602c9bd464b1e44cabebfa3541c507c
 
-js
+```js
 const Web3 = require('web3');
 const tokenAbi = process.env.TOKEN_ABI;
 
@@ -34,3 +34,4 @@ async function mintToken(toAddress, amount) {
 }
 
 mintToken('Address', 10);
+```
