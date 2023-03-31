@@ -1,0 +1,16 @@
+Transaction Hash 
+https://explorer.public.zkevm-test.net/tx/0x356014af7db71d7194c9e697047a9e115ac83daba2bb5e07bf8a97024dff27e5
+
+```
+const { ethers } = require('ethers');
+require('dotenv').config();
+const abi = require('../artifacts/contracts/zkThon.sol/zkThon.json').abi;
+const contractAddress = '0x3ac587078b344a3d27e56632dff236f1aff04d56';
+const provider = new ethers.providers.JsonRpcProvider('https://rpc.public.zkevm-test.net');
+const signer = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
+const contract = new ethers.Contract(contractAddress, abi, signer);
+async function call() {
+  await contract.submitUsername('vedantpar');
+}
+call();
+```
