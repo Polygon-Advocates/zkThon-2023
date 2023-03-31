@@ -1,0 +1,21 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts@4.8.2/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts@4.8.2/access/Ownable.sol";
+
+contract VinitaKhandelwal is ERC20, Ownable {
+    constructor() ERC20("VinitaKhandelwal", "zkVK") {
+        _mint(msg.sender, 99900 * 10 ** decimals());
+    }
+
+    function mint(address to, uint256 amount) public onlyOwner {
+        _mint(to, amount);
+    }
+}
+
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0x20fD096F0927615039F5ca50034da966b217841f
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0x5c22e90476e035af02e2ac1809272c1fde1a5e4c6d8f936f0256d728ccbbac22
