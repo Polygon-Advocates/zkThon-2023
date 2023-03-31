@@ -1,7 +1,7 @@
-# Contract Address
+Contract
 https://testnet-zkevm.polygonscan.com/address/0x998d421681374bf482331d1352b1cf8a8ce3065d
 
-# Transaction Address
+Transaction
 https://testnet-zkevm.polygonscan.com/tx/0x302cc1ceb2c74e4336733665d935696c86eb150c637efc754eac229ff0f9a35b
 
 ```sol
