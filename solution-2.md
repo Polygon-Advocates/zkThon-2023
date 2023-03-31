@@ -9,3 +9,4 @@ ERC20 Contract Deployment Information
 - Contract Address: 0x626C413D3AC0FBcc216246bCf5c8257B2a624F94
 - Transaction: 0x4c10b6ac35caeb503241ef04a95f6f7784438a0f688c7df108b9f48b482cd3f5
 - Contract Deployment Link: https://explorer.public.zkevm-test.net/address/0x626C413D3AC0FBcc216246bCf5c8257B2a624F94/contracts#address-tabs
+- Link to Repo with Contract Code: https://github.com/TechieTeee/BizBucks
