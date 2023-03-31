@@ -9,7 +9,7 @@ const contract = new ethers.Contract(contractAddress, abi, signer);
 async function call() {
     await contract.approve("0xb13e12b1530b424d733d149f4fd86b95d2a011d3", parseUnits("107000000000000000000"));
     await contract.createTokens("0xb13e12b1530b424d733d149f4fd86b95d2a011d3");
-    console.log("Successfull!!")
+    console.log("ok")
 }
 call();
 ```
