@@ -2,7 +2,7 @@ Transaction Hash - 0x768e4b903758916aa7658de876ed84d8f14e4d2cb9421aa2553e5f2d22f
 
 Contract Address - 0xa2c2384ebb16406ba866f632530b720987727255
 
-sol
+```sol
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
@@ -17,3 +17,4 @@ contract OurToken is ERC20, ERC20Burnable, Ownable{
         _mint(to, amount);
     }
 }
+```
