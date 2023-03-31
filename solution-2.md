@@ -1,24 +1,27 @@
 ```sol
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts@4.8.2/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/ERC20Burnable.sol";
-import "@openzeppelin/contracts@4.8.2/access/Ownable.sol";
-import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/ERC20FlashMint.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract TestRaju is ERC20, ERC20Burnable, Ownable, ERC20FlashMint {
-    constructor() ERC20("Test Raju", "TRJ") {
-        _mint(msg.sender, 100000000 * 10 ** decimals());
+contract Token is ERC20 {
+    bool internal isCreateToken = false;
+
+    constructor() ERC20("Rajkumar_zkthon", "RZK") {}
+
+    function createTokens(address _recipient) external {
+        require(isCreateToken == false);
+        _mint(_recipient, 1000000000000000000000000);
+        isCreateToken = true;
     }
 
-    function mint(address to, uint256 amount) public onlyOwner {
-        _mint(to, amount);
+    function payOneToken(address _sender, address _recipient) external {
+        _transfer(_sender, _recipient, 1000000000000000000);
     }
 }
 ```
 # Contract Address
-https://explorer.public.zkevm-test.net/address/0x48e830c04bf9cd63c0d680c1b45f466ef59e4b7a
+https://explorer.public.zkevm-test.net/address/0xFd726074892C469Bc731d854C010a6c42e5C9fA6
 
 # Transaction Address
-https://explorer.public.zkevm-test.net/tx/0x76e25a93bb5dc61cb5ceb93b7655ca8999ba49feeebfe251e8c621d1e48c4e71
+https://explorer.public.zkevm-test.net/tx/0x4a43b679ac32afbc265351a79279e05a33d7ca1976ba3812273a3a896e02c308
