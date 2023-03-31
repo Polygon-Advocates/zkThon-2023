@@ -1,0 +1,32 @@
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0x998Fb316B2806999137375DED5A4E6895DC02a32
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0x36275d79182af5ba5b764ed955059962a102c1fc65664608ed3304fb7d79f564
+
+================================
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts@4.8.2/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts@4.8.2/access/Ownable.sol";
+import "@openzeppelin/contracts@4.8.2/utils/Counters.sol";
+
+contract Primate2218 is ERC721, Ownable {
+    using Counters for Counters.Counter;
+
+    Counters.Counter private _tokenIdCounter;
+
+    constructor() ERC721("Primate2218", "P2218") {}
+
+    function _baseURI() internal pure override returns (string memory) {
+        return "https://dl.openseauserdata.com/cache/originImage/files/a3312d3145adfaf16b2b15cc0b4d1399.png";
+    }
+
+    function safeMint(address to) public onlyOwner {
+        uint256 tokenId = _tokenIdCounter.current();
+        _tokenIdCounter.increment();
+        _safeMint(to, tokenId);
+    }
+}
