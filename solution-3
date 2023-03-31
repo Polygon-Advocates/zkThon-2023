@@ -1,0 +1,16 @@
+TX URL: https://explorer.public.zkevm-test.net/tx/0x7841e81542d59fe139f0668a31da7b89a6fd5f1d4553c351072df6f4f2a7884f
+
+
+```
+const { ethers } = require('ethers');
+require('dotenv').config();
+const abi = require('../artifacts/contracts/zkThon.sol/zkThon.json').abi;
+const contractAddress = '0x3ac587078b344a3d27e56632dff236f1aff04d56';
+const provider = new ethers.providers.JsonRpcProvider('https://rpc.public.zkevm-test.net');
+const signer = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
+const contract = new ethers.Contract(contractAddress, abi, signer);
+async function call() {
+  await contract.submitUsername('peterke11er');
+}
+call();
+```
