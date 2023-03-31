@@ -1,0 +1,27 @@
+🪴 Challenge II: Deploy an ERC20 Token on the zkEVM Testnet
+-----------------------------------------------------------
+
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0x93e82c7b75330AcB2a4808912a6edce4B70FA6Ed
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0x8e373c6f67ac6f0662a5e8a5cf9f91889266aa8d5e776f6ece5bcdb06531abd3
+
+-----------------------------------------------------------
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts@4.8.2/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/ERC20Burnable.sol";
+import "@openzeppelin/contracts@4.8.2/access/Ownable.sol";
+
+contract Kaushikigarg is ERC20, ERC20Burnable, Ownable {
+    constructor() ERC20("kaushikigarg", "KG") {
+        _mint(msg.sender, 75000000 * 10 ** decimals());
+    }
+
+    function mint(address to, uint256 amount) public onlyOwner {
+        _mint(to, amount);
+    }
+}
