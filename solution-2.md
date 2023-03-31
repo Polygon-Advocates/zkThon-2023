@@ -18,4 +18,4 @@ contract AbhayPramod_zkthon is ERC20, ERC20Burnable, Ownable {
 ```
 
 0xb498d7fe6d97064f57dd47459a09d41cc0772337
-contact address
+contract address
