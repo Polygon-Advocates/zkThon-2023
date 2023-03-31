@@ -1,10 +1,10 @@
 ## Description
 
-This pull request is for the zkEVM Challenge 1. I have reviewed the zkEVM documentation and shared my understanding through a Twitter thread using the hashtags #zkThon and #zkEVM. The link to my Twitter thread is [https://twitter.com/JeffreyRAnthony/status/1640113073003413504](https://twitter.com/JeffreyRAnthony/status/1641250472211234817).
+This pull request is for the zkEVM Challenge 1. I have reviewed the zkEVM documentation and shared my understanding through a Twitter thread using the hashtags #zkThon and #zkEVM. The link to my Twitter thread is [insert link here].
 
 ## Checklist
 
-- [x] I have created a new file named `solution-1.md` for this challenge.
-- [x] I have added the details of my submission to the [Airtable form](https://airtable.com/shr21z0FfPImZfYBQ).
-- [x] I have named my branch `username_zkthon`.
-- [x] I have named my PR `username_zkthon`.
+- [ ] I have created a new file named `solution-1.md` for this challenge.
+- [ ] I have added the details of my submission to the [Airtable form](https://airtable.com/shr21z0FfPImZfYBQ).
+- [ ] I have named my branch `username_zkthon`.
+- [ ] I have named my PR `username_zkthon`.
