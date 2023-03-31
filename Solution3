@@ -12,5 +12,5 @@ async function call() {
 call();
 ```
 
-Transaction Hash
+# Transaction Address
 https://explorer.public.zkevm-test.net/tx/0x48c1a6d246f547700194f6f27b1e1109766971534e957654f3f37500603570d7
