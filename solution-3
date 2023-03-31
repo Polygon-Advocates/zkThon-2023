@@ -1,0 +1,26 @@
+Transaction Hash: https://explorer.public.zkevm-test.net/tx/0xff6e62991b9bc103c39f8756818dde5847521e23b04d9c014b8752bc2fca808a
+
+```js
+const Web3 = require('web3');
+const tokenAbi = process.env.TOKEN_ABI;
+const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
+const tokenAddress = '0x0d04D18136c70Efe36263b13b20F5D8c34068566'; // Replace with the address of your token
+const fromAddress = '0x0f139974DFC5f21EE21043ceBe4E7c738B663b78; // Replace with the address 
+const privateKey = 'YOUR_PRIVATE_KEY'; // Replace with your private key
+const token = new web3.eth.Contract(tokenAbi, tokenAddress);
+async function mintToken(toAddress, amount) {
+  const nonce = await web3.eth.getTransactionCount(fromAddress);
+  const gasPrice = await web3.eth.getGasPrice();
+  const txParams = {
+    nonce: nonce,
+    gasPrice: gasPrice,
+    gasLimit: 500000,
+    to: tokenAddress,
+    value: 0,
+    data: token.methods.mint(toAddress, amount).encodeABI()
+  };
+  const signedTx = await web3.eth.accounts.signTransaction(txParams, privateKey);
+  const txReceipt = await web3.eth.sendSignedTransaction(signedTx.rawTransaction);
+}
+mintToken('Address', 15000000000000000000);
+```
