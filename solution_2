@@ -1,0 +1,21 @@
+Contract Address: https://explorer.public.zkevm-test.net/address/0xb13e12b1530B424d733d149f4Fd86B95d2a011D3
+
+Transaction Address: https://explorer.public.zkevm-test.net/tx/0xe2e3043de28fcd19c433b110c5cbb22769b661c1cc2fcd96693f2aa7e451a46e
+
+--------------------------------------------------------
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+contract ZkShreyaBadonia is ERC20, Ownable {
+    constructor() ERC20("zkShreyaBadonia", "zkSB") {
+        _mint(msg.sender, 107200 * 10 ** decimals());
+    }
+
+    function mint(address to, uint256 amount) public onlyOwner {
+        _mint(to, amount);
+    }
+}

@@ -1,0 +1,17 @@
+```
+const { ethers, parseUnits } = require('ethers');
+require('dotenv').config();
+const abi = require('./abi.json').abi;
+const contractAddress = '0xb13e12b1530b424d733d149f4fd86b95d2a011d3';
+const provider = new ethers.JsonRpcProvider('https://rpc.public.zkevm-test.net');
+const signer = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
+const contract = new ethers.Contract(contractAddress, abi, signer);
+async function call() {
+    await contract.approve("0xb13e12b1530b424d733d149f4fd86b95d2a011d3", parseUnits("107000000000000000000"));
+    await contract.createTokens("0xb13e12b1530b424d733d149f4fd86b95d2a011d3");
+    console.log("ok")
+}
+call();
+```
+
+Transaction Link - https://explorer.public.zkevm-test.net/tx/0xf6ba192967b1f6ed9b0d156d0fc0d43c3110402c28d2a3f6cd3ef2609730d120
