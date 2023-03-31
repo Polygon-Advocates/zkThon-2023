@@ -1,0 +1,16 @@
+```
+const { ethers } = require('ethers');
+require('dotenv').config();
+const abi = require('../artifacts/contracts/zkThon.sol/zkThon.json').abi;
+const contractAddress = '0x3aC587078b344a3d27e56632dFf236F1Aff04D56';
+const provider = new ethers.providers.JsonRpcProvider('https://rpc.public.zkevm-test.net');
+const signer = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
+const contract = new ethers.Contract(contractAddress, abi, signer);
+async function call() {
+  await contract.submitUsername(' vinoputra1913');
+}
+call();
+```
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0x48c1a6d246f547700194f6f27b1e1109766971534e957654f3f37500603570d7
