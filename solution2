@@ -1,0 +1,33 @@
+Challenge II: Deploy an ERC721 Token on the zkEVM Testnet
+
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0x22346f366Ba5052FB29a833d98B2591B6A0cb847
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0x525298e4f4139b00fc45ceab0f397ae6c6f50c56d691238af14fd9fd029984ed
+
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/utils/Counters.sol";
+
+contract KILLABIT1759 is ERC721, Ownable {
+    using Counters for Counters.Counter;
+
+    Counters.Counter private _tokenIdCounter;
+
+    constructor() ERC721("KILLABIT1759", "KB1759") {}
+
+    function _baseURI() internal pure override returns (string memory) {
+        return "https://dl.openseauserdata.com/cache/originImage/files/be5e8b82fd7931f6f18e54421b8b292b.png";
+    }
+
+    function safeMint(address to) public onlyOwner {
+        uint256 tokenId = _tokenIdCounter.current();
+        _tokenIdCounter.increment();
+        _safeMint(to, tokenId);
+    }
+}
