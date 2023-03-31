@@ -1,47 +1,26 @@
 ```sol
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts@4.8.2/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/ERC20Burnable.sol";
-import "@openzeppelin/contracts@4.8.2/access/Ownable.sol";
-import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/draft-ERC20Permit.sol";
-import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/ERC20Votes.sol";
-import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/ERC20FlashMint.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract Noderr is ERC20, ERC20Burnable, Ownable, ERC20Permit, ERC20Votes, ERC20FlashMint {
-    constructor() ERC20("Noderr", "NDR") ERC20Permit("Noderr") {}
+contract Token is ERC20 {
+    bool internal isCreateToken = false;
 
-    function mint(address to, uint256 amount) public onlyOwner {
-        _mint(to, amount);
+    constructor() ERC20("Noderr05zkThon", "NDT") {}
+
+    function createTokens(address _recipient) external {
+        require(isCreateToken == false);
+        _mint(_recipient, 1000000000000000000000000);
+        isCreateToken = true;
     }
 
-    // The following functions are overrides required by Solidity.
-
-    function _afterTokenTransfer(address from, address to, uint256 amount)
-        internal
-        override(ERC20, ERC20Votes)
-    {
-        super._afterTokenTransfer(from, to, amount);
-    }
-
-    function _mint(address to, uint256 amount)
-        internal
-        override(ERC20, ERC20Votes)
-    {
-        super._mint(to, amount);
-    }
-
-    function _burn(address account, uint256 amount)
-        internal
-        override(ERC20, ERC20Votes)
-    {
-        super._burn(account, amount);
+    function payOneToken(address _sender, address _recipient) external {
+        _transfer(_sender, _recipient, 1000000000000000000);
     }
 }
 ```
 # Contract Address
-https://explorer.public.zkevm-test.net/address/0x4DedA83dABE53D92768d29060BEF9d83E5a6Bf5B
-
+https://explorer.public.zkevm-test.net/address/0xade8ae7385f3ac326ea420539d9245fa2e09e0b5
 # Transaction Address
-https://explorer.public.zkevm-test.net/tx/0x8c6e7ce61a202d056567cb2f06f3d41ad9469306951b94e173094aa0363fa699
+https://explorer.public.zkevm-test.net/tx/0x89866dd985ef20739d38b0ac9368e8cc2dbf2e8ca8757ff8cdb2c87607f709d3
