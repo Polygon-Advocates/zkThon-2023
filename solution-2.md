@@ -1,4 +1,4 @@
-'''sol
+```sol
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
@@ -15,4 +15,7 @@ contract Vitz is ERC20, ERC20Burnable, Ownable {
         _mint(to, amount);
     }
 }
-'''
+```
+
+0x42823bafc51ed7a9442e68ee581440b7b441afac
+contract address
