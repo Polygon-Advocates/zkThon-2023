@@ -18,4 +18,4 @@ contract Vitz is ERC20, ERC20Burnable, Ownable {
 ```
 
 0x42823bafc51ed7a9442e68ee581440b7b441afac
-contract address
+contract address 
