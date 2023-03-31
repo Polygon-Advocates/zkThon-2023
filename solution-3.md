@@ -52,3 +52,19 @@ contract CynaralZK is ERC20, ERC20Burnable, Pausable, Ownable, ERC20Permit, ERC2
         super._burn(account, amount);
     }
 }
+
+
+	{
+		"from": "0xb0895103c6EADa32EE73f4407E26D5b21101c0ED",
+		"topic": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+		"event": "Transfer",
+		"args": {
+			"0": "0x0000000000000000000000000000000000000000",
+			"1": "0xf20156bC371a91F3394569eEF3BE43dB3e110833",
+			"2": "100",
+			"from": "0x0000000000000000000000000000000000000000",
+			"to": "0xf20156bC371a91F3394569eEF3BE43dB3e110833",
+			"value": "100"
+		}
+	}
+]
