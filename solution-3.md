@@ -1,6 +1,6 @@
 Contract Address - 0x4d54a8e7b8577c4a130396e1e0d09914311bb0d2
 
-transaction hash - 0x0af5dec6ae2140630f02c245cba3cb0981f1817fa471e28b2f9590ec5a9a2491
+transaction hash - 0xe36da557ba845007f3ee4af18b9f33ce0ef05ed512f7f13c52bf87c45685d5f6
 
 ```js
 const Web3 = require('web3');
