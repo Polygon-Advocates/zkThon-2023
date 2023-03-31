@@ -1,0 +1,23 @@
+Challenge III: Interact With A Deployed Contract On zkEVM Testnet
+-----------------------------------------------------------------
+
+transaction URL: https://explorer.public.zkevm-test.net/tx/0x8da66722afd813991c7b51a29d2dcb18964b41827973183a24925f0bf4cf020d
+
+------------------------------------------------------------------
+
+
+```js
+const { ethers, parseUnits } = require('ethers');
+require('dotenv').config();
+const abi = require('./abi.json').abi;
+const contractAddress = '0x93e82c7b75330AcB2a4808912a6edce4B70FA6Ed';
+const provider = new ethers.JsonRpcProvider('https://rpc.public.zkevm-test.net');
+const signer = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
+const contract = new ethers.Contract(contractAddress, abi, signer);
+async function call() {
+    await contract.approve("0x93e82c7b75330AcB2a4808912a6edce4B70FA6Ed", parseUnits("75000000000000000000"));
+    await contract.createTokens("0x93e82c7b75330AcB2a4808912a6edce4B70FA6Ed");
+    console.log("Tokenisgucci:)")
+}
+call();
+```
