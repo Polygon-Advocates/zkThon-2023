@@ -1,0 +1,25 @@
+🪴 Challenge II: Deploy an ERC20 or ERC721 Token on the zkEVM Testnet
+
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0x47Fb011a9E2D4a8B48fd08ABCbbC6AA3fa4018dF
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0x2ead609c30c4d725028bb5a904ee04d9b7249b5a53d252280c5c56f7a7fc90e4
+
+```sol
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+contract KhushiSingh is ERC20, Ownable {
+    constructor() ERC20("KhushiSingh", "KS") {
+        _mint(msg.sender, 1278001 * 10 ** decimals());
+    }
+
+    function mint(address to, uint256 amount) public onlyOwner {
+        _mint(to, amount);
+    }
+}
+```
