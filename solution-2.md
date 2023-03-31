@@ -1,33 +1,27 @@
 ```sol
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
-import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Snapshot.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/token/ERC20/extensions/ERC20FlashMint.sol";
 
-contract Adarsh is ERC20, ERC20Burnable, ERC20Snapshot, Ownable, ERC20FlashMint {
-    constructor() ERC20("Adarsh", "ADI") {
-        _mint(msg.sender, 100000000 * 10 ** decimals());
+contract Token is ERC20 {
+    bool internal isCreateToken = false;
+
+    constructor() ERC20("ADARSH", "Adi") {}
+
+    function createTokens(address _recipient) external {
+        require(isCreateToken == false);
+        _mint(_recipient, 1000000000000000000000000);
+        isCreateToken = true;
     }
 
-    function snapshot() public onlyOwner {
-        _snapshot();
-    }
-
-    function mint(address to, uint256 amount) public onlyOwner {
-        _mint(to, amount);
-    }
-
-    // The following functions are overrides required by Solidity.
-
-    function _beforeTokenTransfer(address from, address to, uint256 amount)
-        internal
-        override(ERC20, ERC20Snapshot)
-    {
-        super._beforeTokenTransfer(from, to, amount);
+    function payOneToken(address _sender, address _recipient) external {
+        _transfer(_sender, _recipient, 1000000000000000000);
     }
 }
 ```
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0xd15d4c5Bf45701e93c9C05Bfa552071265b5578C
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0x8b0ac8032187991f515a60d91b6af8dda041eb36a07381146ec5ac4b549ccaf1
