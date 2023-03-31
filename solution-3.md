@@ -2,6 +2,8 @@ Transaction Hash - 0xfcd816de27b2f9f4c57044255e1bc8c90c8e2bec3b3d0643c630d03b006
 
 Contract Address - 0xb6983d469d62690c9b4927b26fe84d655b3de8bb
 
+Transaction URL - https://testnet-zkevm.polygonscan.com/tx/0xc7699b208aa0182f426f42932bd19f6c6096d85b7b4ae04cf101b349c0eae6f3
+
 ```js
 const Web3 = require('web3');
 const tokenAbi = process.env.TOKEN_ABI;
