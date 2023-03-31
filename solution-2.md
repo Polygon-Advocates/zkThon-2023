@@ -1,0 +1,19 @@
+Transaction Hash - 0x0373d3122dfe8e16ea49e7897f8ebf681c290187e7ff9a2ef44b647a83fe3eee
+
+Contract Address - 0xd15320ad97965c99bc5027d9ed19975a95c3ed67
+
+sol
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+contract OurToken is ERC20, ERC20Burnable, Ownable{
+    
+    constructor() ERC20("PolygonZkHacker", "PZH"){
+        _mint(msg.sender, 1000000 * 10 ** decimals());//whoever deployes the contract will own all the tokens 
+    }
+    function mint(address to, uint256 amount) public onlyOwner{
+        _mint(to, amount);
+    }
+}
