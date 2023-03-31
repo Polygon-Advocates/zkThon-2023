@@ -16,3 +16,8 @@ contract ZkThon is ERC20, ERC20Burnable, Ownable {
     }
 }
 ```
+
+# Contract Address
+https://testnet-zkevm.polygonscan.com/address/0xAed4eABB9dd84092C632a6Fd5bfbB7DC715b9BB7
+# Transaction Address
+https://testnet-zkevm.polygonscan.com/tx/0x82cb250b00eb9672f51bd3341e44a8b01fa636a2baeae94f64990aa6c24a4764
