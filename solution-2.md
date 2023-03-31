@@ -1,3 +1,6 @@
+Contract address:- 0x4d54a8e7b8577c4a130396e1e0d09914311bb0d2
+
+```sol
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
@@ -15,3 +18,4 @@ contract MyToken is ERC20, ERC20Burnable, Ownable{
         _mint(to, amount);
     }
 }
+```
