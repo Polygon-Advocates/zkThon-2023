@@ -11,6 +11,8 @@ Also, look at the comments by the reviewers.
 
 4️⃣ | If you have **completed and approved** tag you are done and approved. 
 
+5️⃣ | If you have **hold** , it means that you might be copying the same code and also trying to create a new github profile just for this tasks.
+
 ## For reviewers
 
 🟥 High Priority ->> **completed but waiting approval**, approve the PRs with this tag as they completed all challenges.
@@ -19,5 +21,9 @@ Also, look at the comments by the reviewers.
 **approved** tag.
 
 🟨 Low Priority ->> **done**, wait for these tags to be finished as we requested them to do some changes. 
+
+🚨🚨🚨🚨🚨🚨🚨🚨🚨
+
+Give **hold** labels if you find something phishy. 
 
 For more info , contact the [telegram channel](https://t.me/+TqTo-dIdeLlkMzA1)
