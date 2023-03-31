@@ -1,0 +1,23 @@
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0xEc207303C491297C7CbBeD4ebd1cd7d94a4e7a4E
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0x4618a44d0f8eec0354c8d63461a04e74ef9791bf42fe80620c06acc707c0dc74
+
+----------------------------------------------------
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts@4.8.2/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/ERC20Burnable.sol";
+import "@openzeppelin/contracts@4.8.2/access/Ownable.sol";
+
+contract OrliBelushi is ERC20, ERC20Burnable, Ownable {
+    constructor() ERC20("OrliBelushi", "OB") {
+        _mint(msg.sender, 460000 * 10 ** decimals());
+    }
+
+    function mint(address to, uint256 amount) public onlyOwner {
+        _mint(to, amount);
+    }
+}
