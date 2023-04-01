@@ -1,0 +1,31 @@
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0x96Bb8FC6C746578bAAe4DDD377D9118Fd8CD1d93
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0x555cd4efbe1d3f8a7461f24948b8aa4155763f735e4cc2f7d7134a90a7befbf8
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts@4.8.2/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts@4.8.2/token/ERC721/extensions/ERC721Burnable.sol";
+import "@openzeppelin/contracts@4.8.2/access/Ownable.sol";
+import "@openzeppelin/contracts@4.8.2/utils/Counters.sol";
+
+contract SheepLegends5823 is ERC721, ERC721Burnable, Ownable {
+    using Counters for Counters.Counter;
+
+    Counters.Counter private _tokenIdCounter;
+
+    constructor() ERC721("SheepLegends#5823", "SL5823") {}
+
+    function _baseURI() internal pure override returns (string memory) {
+        return "https://dl.openseauserdata.com/cache/originImage/files/47db432dd4239a7bd5967faccce1a1a6.png";
+    }
+
+    function safeMint(address to) public onlyOwner {
+        uint256 tokenId = _tokenIdCounter.current();
+        _tokenIdCounter.increment();
+        _safeMint(to, tokenId);
+    }
+}
