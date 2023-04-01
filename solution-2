@@ -1,0 +1,27 @@
+\/\/\/ Contract Code \/\/\/
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+contract KillerGF2287 is ERC721, Ownable {
+    constructor() ERC721("KillerGF2287", "KGF2287") {}
+
+    function _baseURI() internal pure override returns (string memory) {
+        return "https://dl.openseauserdata.com/cache/originImage/files/bb40b4391b62e2a1df3a49637e8add04.png";
+    }
+
+    function safeMint(address to, uint256 tokenId) public onlyOwner {
+        _safeMint(to, tokenId);
+    }
+}
+
+==============================
+
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0x25acccd14F53a9abC26ffdd753758868b4906542
+
+# Transaction Address
+https://explorer.public.zkevm-test.net/tx/0xa8cb14c608d32e4bf8f5373f0af58f411287b10fbf1ed4216f863a919e7b17c8
