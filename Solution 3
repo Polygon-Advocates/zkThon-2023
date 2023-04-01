@@ -1,0 +1,12 @@
+Challenge III: Interact With A Deployed Contract On zkEVM Testnet
+
+https://explorer.public.zkevm-test.net/tx/0xa2c7ae87e1ccffed28afc96e229013a919315c79e88ec01da6818fc80ab6b44b
+
+```js
+async function mintToken(toAddress) {
+    const contract = new web3.eth.Contract(abi, contractAddress);
+    const tokenId = 1; // Replace with desired token ID
+    const result = await contract.methods.mint(toAddress, tokenId).send({ from: 0xaB96aB5C6d32d1e83E2953f1e3FF94abB36DB509 });
+    console.log(`Minted token ${tokenId} to ${toAddress}. Transaction: ${result.transactionHash}`);
+}
+```
