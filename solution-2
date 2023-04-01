@@ -1,0 +1,29 @@
+# Solution 2
+
+## 🪴 Challenge II: Deploy an ERC20 or ERC721 Token on the zkEVM Testnet
+
+|                  |                                                                                                                                                                                    |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Token Name       | `zk Fantastic Token`                                                                                                                                                                        |
+| Token Symbol     | `zkFT`                                                                                                                                                                            |
+| Transaction hash | [0xb487506272d6fd9c35ba48d00a880f5aea3cbbceac6c2efc918d4763e5804133](https://explorer.public.zkevm-test.net/tx/0xb487506272d6fd9c35ba48d00a880f5aea3cbbceac6c2efc918d4763e5804133) |
+| Contract address | [0x0C363AA36F476148eadCd30E3368Dc51B769e0e1](https://explorer.public.zkevm-test.net/address/0x0C363AA36F476148eadCd30E3368Dc51B769e0e1)                                            |
+
+### CODE
+```
+// SPDX-License-Identifier: Apache-2.0
+pragma solidity ^0.8.11;
+
+//ERC20
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+// Token
+import "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20BurnableUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20VotesUpgradeable.sol";
+    
+contract TokenERC20 is ERC20
+{
+  function _mint(address account, uint256 amount) internal virtual override(ERC20Upgradeable, ERC20VotesUpgradeable) {
+        super._mint(account, amount);
+  }
+}
+```
