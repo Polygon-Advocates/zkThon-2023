@@ -1,7 +1,6 @@
 https://testnet-zkevm.polygonscan.com/tx/0xd191fc4a472169cdd332afc7aa815d6d40b9c24651d5981a22a428e3b5590436
 
 ```js
-// SPDX-License-Identifier: MIT
 require('dotenv').config();
 const ethers = require('ethers');
 const BenToken = artifacts.require("BenToken");
