@@ -1,0 +1,45 @@
+```sol
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts@4.8.2/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/ERC20Burnable.sol";
+import "@openzeppelin/contracts@4.8.2/access/Ownable.sol";
+
+contract Zk_Aryan is ERC20, ERC20Burnable, Ownable {
+    constructor() ERC20("zk_Aryan", "zkAR") {
+        _mint(msg.sender, 10000 * 10 ** decimals());
+    }
+
+    function mint(address to, uint256 amount) public onlyOwner {
+        _mint(to, amount);
+    }
+}
+
+# Contract Address
+https://explorer.public.zkevm-test.net/address/0xe3E9056F0F8a423D80071660eEA66329bce08464
+
+# Burn TransactionHash
+https://explorer.public.zkevm-test.net/tx/0x598bebc02d2eea3d3c1c291c54ca665f61453c9e5837819598eeec5f21f0b687
+
+# Mint Transaction
+Hashhttps://explorer.public.zkevm-test.net/tx/0x617b7c0cf308333143beacb2b49edb570dd26642c9bae99dcc605999b85ffff5
+
+
+import { ethers } from 'ethers';
+  import ABI from './zkThon.json';
+  const PRIVATE_KEY = "YOUR_PRIVATE_KEY"
+  const abi = ABI;
+  const contractAddress = '0xe3e9056f0f8a423d80071660eea66329bce08464';
+  let url = 'https://rpc.public.zkevm-test.net';
+  const provider = new ethers.providers.JsonRpcProvider(url);
+  const signer = new ethers.Wallet(PRIVATE_KEY, provider);
+  const contract = new ethers.Contract(contractAddress, abi, signer);
+  const recipient = '0xfb7b5d2c29ed25a135a1ac8d4421158a2e8c9d90';
+  const amount = ethers.utils.parseUnits('500', 'ether');
+ 
+  async function mint() {
+    console.log("Minting...")
+    const tx = await contract.mint(recipient, amount);
+    console.log('Transaction hash:', tx.hash);
+  }
