@@ -45,5 +45,3 @@ We can’t wait for you to complete this and claim, **your PFP’s 🖼️**
 [**Submission Challenge I form**](https://airtable.com/shr21z0FfPImZfYBQ)
 
 *This is an Important step, please don't skip.*
-
-.
